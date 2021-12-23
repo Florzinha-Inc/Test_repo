@@ -1,0 +1,27 @@
+name: "Assign Systems/Campaigns Label AMER"
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: Naturalclar/issue-action@v1.0.0
+
+        with:
+          title-or-body: "both"
+          keywords: '["AMER"]'
+          labels: '["MOPS: Systems/Campaigns", "AMER", "Triage"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  auto-assign:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+        - name: 'Auto-assign issue'
+          uses: pozil/auto-assign-issue@v1.0.3
+          with:
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
+            assignees: BrunoChester
