@@ -33,9 +33,9 @@ body:
       label: What kind of level is this tip?
       description: What level of developer do you tthink this tip is aimed at?
       options:
-        - Beginner
-        - Intermediate
-        - Advanced
+        - AMER
+        - EMEA
+        - APAC
     validations:
       required: true
 
@@ -45,9 +45,9 @@ body:
       label: Where do you want this GitHub Tip?
       description: Where would you like to see this GitHub Tip? You can select more than one.
       options:
-        - label: AMER
+        - label: NONE
           required: false
-        - label: EMEA
+        - label: NA
           required: false
         - label: YouTube video (longer)
           required: false
