@@ -45,9 +45,9 @@ body:
       label: Where do you want this GitHub Tip?
       description: Where would you like to see this GitHub Tip? You can select more than one.
       options:
-        - label: Twitch
+        - label: AMER
           required: false
-        - label: DEV post
+        - label: EMEA
           required: false
         - label: YouTube video (longer)
           required: false
