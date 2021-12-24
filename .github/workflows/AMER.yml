@@ -12,7 +12,7 @@ jobs:
 
         with:
           title-or-body: "both"
-          keywords: '["AMER"]'
+          keywords: '["I am based in AMER"]'
           labels: '["MOPS: Systems/Campaigns", "AMER", "Triage"]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
