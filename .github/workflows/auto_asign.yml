@@ -1,10 +1,20 @@
-name: "Set Issue Label and Assignee"
-on:
-  issues:
-    types: [opened]
-
+name: Auto Comment
+on: [issues]
 jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpenedReactions: 'hooray, +1'
+          issuesOpenedComment: |
+            👋 @{{ author }}, this is the MOPs bot :basecampy:. Thank you for raising an issue!
+            I'll go ahead and assign it to one of my humans team members and they will triage this issue and get back to you as soon as possible.
+            By the way, please make sure you have given us as much context as possible.
+
   test:
+    needs: run
     runs-on: ubuntu-latest
     steps:
       - uses: Naturalclar/issue-action@v2.0.2
