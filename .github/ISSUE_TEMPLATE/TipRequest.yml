@@ -33,9 +33,9 @@ body:
       label: What kind of level is this tip?
       description: What level of developer do you tthink this tip is aimed at?
       options:
-        - I am based in AMER
-        - I am based in EMEA
-        - APAC
+        - v
+        - cv
+        - vcv
     validations:
       required: true
 
