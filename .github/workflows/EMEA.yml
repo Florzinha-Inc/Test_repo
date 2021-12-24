@@ -12,7 +12,7 @@ jobs:
 
         with:
           title-or-body: "both"
-          keywords: '["EMEA"]'
+          keywords: '["I am based in EMEA"]'
           labels: '["MOPS: Systems/Campaigns", "EMEA", "Triage"]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
