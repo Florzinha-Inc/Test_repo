@@ -9,19 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: Naturalclar/issue-action@v1.0.0
+      - uses: pozil/auto-assign-issue@v1.0.3
 
         with:
           title-or-body: "both"
           keywords: '["I am based in EMEA"]'
           labels: '["MOPS: Systems/Campaigns", "EMEA", "Triage"]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-  auto-assign:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-        - name: 'Auto-assign issue'
-          uses: pozil/auto-assign-issue@v1.0.3
-          with:
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
-            assignees: mike421453
+          assignees: mike421453
