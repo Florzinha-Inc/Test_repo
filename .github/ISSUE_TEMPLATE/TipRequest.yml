@@ -18,7 +18,7 @@ body:
     id: info
     attributes:
       label: More information about campaign
-      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've opened already.
+      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've one opened already.
       render: shell
     validations:
       required: true
@@ -27,7 +27,7 @@ body:
     id: Region
     attributes:
       label: What region are you targeting?
-      description: AMER, or APAC, or EMEA.
+      description: AMER, APAC, EMEA, or GLOBAL.
       options:
         - AMER
         - APAC
