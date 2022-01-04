@@ -36,3 +36,20 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: SalesForce Campaign Id
+    attributes:
+      label: SalesForce Campaign Id
+      description: What is the SalesForce Campaign Id?
+      placeholder: 7013o000002SggWAAS
+    validations:
+      required: false
+      
+  - type: textarea
+    id: Proposed Audience
+    attributes:
+      label: Proposed campaign audience
+      description: What audience are you targeting for this campaign?
+      placeholder: Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S
+    validations:
+      required: false
