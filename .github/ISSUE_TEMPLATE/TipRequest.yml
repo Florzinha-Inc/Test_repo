@@ -1,6 +1,6 @@
 name: Campaign support request
 description: Request support for a campaign with 1+ emails and Landing pages
-title: "[Tip]: I want "
+title: "[Tips]: I want "
 labels: [Tip, enhancement]
 assignees:
   - mishmanners
