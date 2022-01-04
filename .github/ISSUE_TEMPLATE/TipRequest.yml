@@ -37,7 +37,7 @@ body:
       required: true
 
   - type: input
-    id: SalesForce Campaign Id
+    id: SFDC
     attributes:
       label: SalesForce Campaign Id
       description: What is the SalesForce Campaign Id?
@@ -46,7 +46,7 @@ body:
       required: false
       
   - type: textarea
-    id: Proposed Audience
+    id: Audience
     attributes:
       label: Proposed campaign audience
       description: What audience are you targeting for this campaign?
