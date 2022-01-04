@@ -7,7 +7,7 @@ jobs:
       - uses: wow-actions/auto-comment@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpenedReactions: 'hooray, +1'
+          issuesOpenedReactions: 'hooray'
           issuesOpenedComment: |
             👋 @{{ author }}, this is the MOPs bot :basecampy:. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
@@ -20,5 +20,5 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["AMER"], "labels": ["REGION: AMER"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["Region: EMEA"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
