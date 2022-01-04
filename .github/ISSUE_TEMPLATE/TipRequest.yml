@@ -10,7 +10,7 @@ body:
     attributes:
       label: Campaign name
       description: What is the campaign name?
-      placeholder: ex.:  Email DevOps roundtable
+      placeholder: Email DevOps roundtable
     validations:
       required: true
 
