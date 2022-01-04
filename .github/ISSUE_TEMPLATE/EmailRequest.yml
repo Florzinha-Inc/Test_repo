@@ -1,0 +1,47 @@
+name: Email support request - MOPs
+description: Request support for a single email
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening an Email Support ticket.
+  - type: input
+    id: Name
+    attributes:
+      label: Subject
+      description: What is the email subject?
+      placeholder: You've been invited to GitHub DevOps roundtable
+    validations:
+      required: true
+
+  - type: textarea
+    id: Picture
+    attributes:
+      label: Email header picture
+      description: Please add the email header image or link us to it.
+      render: shell
+    validations:
+      required: true
+
+      
+  - type: textarea
+    id: Audience
+    attributes:
+      label: Proposed campaign audience
+      description: What audience are you targeting for this campaign?
+      placeholder: Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S
+    validations:
+      required: false
+      
+   - type: dropdown
+    id: Region
+    attributes:
+      label: What region are you targeting?
+      description: AMER, APAC, EMEA, or GLOBAL.
+      options:
+        - AMER
+        - APAC
+        - EMEA
+        - GLOBAL
+    validations:
+      required: true
