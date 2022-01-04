@@ -1,41 +1,38 @@
-name: Campaign support request
+name: Campaign support request - MOPs
 description: Request support for a campaign with 1+ emails and Landing pages
-title: "[Tips]: I want "
-labels: [Tip, enhancement]
-assignees:
-  - mishmanners
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for asking Mish for a Tip. Tune into a Live stream or read Mish's articles on DEV for great GitHub tips.
+        Thanks for opening a Campaign Support ticket.
   - type: input
     id: Name
     attributes:
-      label: Name of GitHub Tip
-      description: What is the name of this GitHub Tip?
-      placeholder: ex. GitHub Issue Forms
+      label: Campaign name
+      description: What is the campaign name?
+      placeholder: ex.:  Email DevOps roundtable
     validations:
       required: true
 
   - type: textarea
     id: info
     attributes:
-      label: More information
-      description: Add more information on the tip you would like to see.
+      label: More information about campaign
+      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've opened already.
       render: shell
     validations:
       required: true
 
   - type: dropdown
-    id: Level
+    id: Region
     attributes:
-      label: What kind of level is this tip?
-      description: What level of developer do you tthink this tip is aimed at?
+      label: What region are you targeting?
+      description: AMER, or APAC, or EMEA.
       options:
-        - bug
-        - help
-        - vcv
+        - AMER
+        - APAC
+        - EMEA
+        - GLOBAL
     validations:
       required: true
 
