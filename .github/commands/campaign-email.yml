@@ -27,5 +27,4 @@ steps:
       label: Email header image
       description: Add the header image
       placeholder: Drag and drop the image from your computer here
-      render: shell
 
