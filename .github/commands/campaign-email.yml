@@ -1,40 +1,31 @@
 trigger: campaign-email
-title: Email Builder
-description: Use this to build emails
+title: Email builder
+description: Use this tool to build emails
 surfaces:
 - issue
 steps:
 - type: form
   style: embedded
   body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for opening an Email Support ticket.
   - type: input
-    id: Name
     attributes:
-      label: Subject
-      description: What is the email subject?
-      placeholder: You've been invited to GitHub DevOps roundtable
-    validations:
-      required: true
-
+      label: Email name
+      description: Please add the email name followed by its send order.
+      placeholder: Campaign_name-Invite-Email-1
+  - type: input
+    attributes:
+      label: Email pre-header
+      description: Please add the pre-header for your email
+      placeholder: You are invited to GitHub webinar
+  - type: input
+    attributes:
+      label: Email subject
+      description: Add the email subject
+      placeholder: GitHub webinar coming up
   - type: textarea
-    id: Picture
     attributes:
-      label: Email header picture
-      description: Please add the email header image or link us to it.
+      label: Email header image
+      description: Add the header image
+      placeholder: Drag and drop the image from your computer here
       render: shell
-    validations:
-      required: true
 
-      
-  - type: textarea
-    id: body
-    attributes:
-      label: Email body
-      description: Email body
-      placeholder: Need template examples? Feel free to grab some here:
-    validations:
-      required: false
