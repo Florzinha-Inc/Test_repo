@@ -1,4 +1,4 @@
-trigger: campaign-email
+trigger: campaignemail
 title: Email builder
 description: Use this tool to build emails
 surfaces:
@@ -27,4 +27,8 @@ steps:
       label: Email header image
       description: Add the header image
       placeholder: Drag and drop the image from your computer here
-
+  - type: textarea
+    attributes:
+      label: Email body
+      description: Add the content of your email
+      placeholder: Need help with Markdown email templates? Feel free to use one of these.
