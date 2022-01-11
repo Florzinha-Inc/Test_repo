@@ -10,6 +10,7 @@ jobs:
           issuesOpenedReactions: 'hooray'
           issuesOpenedComment: |
             :basecampy:
+            
             👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
             By the way, please make sure you have given us as much context as possible.
@@ -34,6 +35,8 @@ jobs:
           issuesOpenedReactions: 'rocket'
           issuesOpenedComment: |
             :basecampy:
-            @{{ author }}, please type the command "/campaign-email" to start giving us the details for the email build.
-            **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign**
-            Please type the command otherwise it won't work. Yep, copy and past won't do it unfortunately.
+            
+            @{{ author }}, great progress! I have assigned this issue and labeled it. Now it is your turn to give us the assets details.
+            Let's start with the emails: please type the command "/campaign-email" to start giving us the details for the email build.
+            **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
+            **Pro-tip II:** Please type the command otherwise it won't work. Yep, copy and paste won't do it unfortunately.
