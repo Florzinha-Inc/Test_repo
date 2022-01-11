@@ -23,11 +23,13 @@ jobs:
           parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-
-  createCard:
+  project-card:
+    needs: run
     runs-on: ubuntu-latest
     steps:
       - uses: peter-evans/create-or-update-project-card@v1
         with:
+          token: ${{ secrets.PAT }}
+          project-location: GitHub-MOPs
           project-name: Test-Project
           column-name: Todo
