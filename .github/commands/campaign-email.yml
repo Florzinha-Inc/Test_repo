@@ -1,0 +1,40 @@
+trigger: campaign-email
+title: Email Builder
+description: Use this to build emails
+surfaces:
+- issue
+steps:
+- type: form
+  style: embedded
+  body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening an Email Support ticket.
+  - type: input
+    id: Name
+    attributes:
+      label: Subject
+      description: What is the email subject?
+      placeholder: You've been invited to GitHub DevOps roundtable
+    validations:
+      required: true
+
+  - type: textarea
+    id: Picture
+    attributes:
+      label: Email header picture
+      description: Please add the email header image or link us to it.
+      render: shell
+    validations:
+      required: true
+
+      
+  - type: textarea
+    id: body
+    attributes:
+      label: Email body
+      description: Email body
+      placeholder: Need template examples? Feel free to grab some here:
+    validations:
+      required: false
