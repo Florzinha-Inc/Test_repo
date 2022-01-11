@@ -22,3 +22,16 @@ jobs:
           title-or-body: "both"
           parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  slash:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpenedReactions: 'rocket'
+          issuesOpenedComment: |
+            @{{ author }}, please type the command "/campaign-email" to start giving us the details for the email build.
+            **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign**
+            Please type the command otherwise it won't work. Yep, copy and past won't do it unfortunately.
