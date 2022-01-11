@@ -9,7 +9,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'hooray'
           issuesOpenedComment: |
-            👋 @{{ author }}, this is the MOPs bot :basecampy:. Thank you for raising an issue!
+            :basecampy:
+            👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
             By the way, please make sure you have given us as much context as possible.
 
@@ -32,6 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'rocket'
           issuesOpenedComment: |
+            :basecampy:
             @{{ author }}, please type the command "/campaign-email" to start giving us the details for the email build.
             **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign**
             Please type the command otherwise it won't work. Yep, copy and past won't do it unfortunately.
