@@ -68,19 +68,6 @@ body:
     validations:
       required: true
       
-  - type: dropdown
-    id: page
-    attributes:
-      label: How many landing pages are needed?
-      description: Please select the number of landing pages needed for this campaign
-      options:
-        - One
-        - Two
-        - Three
-        - Four
-        - Five or more
-    validations:
-      required: true
   
   - type: input
     id: Webinartool
