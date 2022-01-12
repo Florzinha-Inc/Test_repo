@@ -29,6 +29,7 @@ jobs:
 
   slash:
     needs: test
+    if: '[ {"keywords": ["Nurture"], {"keywords": ["Webinar"], {"keywords": ["Email"] }]'
     runs-on: ubuntu-latest
     steps:
       - uses: wow-actions/auto-comment@v1
