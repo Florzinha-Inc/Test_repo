@@ -13,9 +13,9 @@ body:
 - type: input
   id: destination
   attributes:
-    label: Lead Upload to Eloqua or SFDC
+    label: Lead Upload to Eloqua and/or SFDC
     description: Please indicate where the leads will be uploaded
-    placeholder: Eloqua
+    placeholder: Eloqua tab A and SFDC tab B
   validations:
     required: false
 - type: input
@@ -31,6 +31,7 @@ body:
     label: Please link us to the Google Sheet file with the leads to be uploaded
     description: Please submit a Google Sheets document following this format
            https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
+           
            If leads are preassigned, use this format
            https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
     placeholder: Lead file
