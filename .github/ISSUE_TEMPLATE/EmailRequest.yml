@@ -1,44 +1,91 @@
-name: Email support request - MOPs
-description: Request support for a single email
+---
+name: 2. Single Email Request
+description: Email template for Single email requests
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for opening an Email Support ticket.
-  - type: input
-    id: Name
-    attributes:
-      label: Subject
-      description: What is the email subject?
-      placeholder: You've been invited to GitHub DevOps roundtable
-    validations:
-      required: true
-  - type: textarea
-    id: Picture
-    attributes:
-      label: Email header picture
-      description: Please add the email header image or link us to it.
-      render: shell
-    validations:
-      required: true
-  - type: textarea
-    id: Audience
-    attributes:
-      label: Proposed campaign audience
-      description: What audience are you targeting for this campaign?
-      placeholder: Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S
-    validations:
-      required: false
-      
-   - type: dropdown
-    id: Region
-    attributes:
-      label: What region are you targeting?
-      description: AMER, APAC, EMEA, or GLOBAL.
-      options:
+ - type: dropdown
+   id: Region
+   attributes:
+     label: What region are you in?
+     description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
+     options:
         - AMER
         - APAC
         - EMEA
-        - GLOBAL
-    validations:
-      required: true
+   validations:
+     required: true
+- type: textarea
+  attributes:
+    label: Proposed Audience
+    placeholder: "Audience selection criteria, list etc"
+  validations:
+    required: true
+- type: input
+  id: dates
+  attributes:
+    label: Test and Send Dates
+    description: Provide Test and Send date
+    placeholder: ex. 06/01/2021
+  validations:
+    required: true
+- type: input
+  id: Approval
+  attributes:
+    label: Approved / Pending
+    description: Is the content Approved?
+    placeholder: Approved
+  validations:
+    required: false
+- type: input
+  id: approver
+  attributes:
+    label: Approved by
+    description: The content is approved by
+    placeholder: ex. John Sample
+  validations:
+    required: false
+- type: input
+  id: Subject
+  attributes:
+    label: Subject
+    description: What is Email Subject?
+    placeholder: ex. Inivitation Email
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Email Copy
+    placeholder: "Email copy, body, text, pictures etc"
+  validations:
+    required: true
+- type: input
+  id: From
+  attributes:
+    label: Email From
+    description: Email from address?
+    placeholder: ex. marketing@marketing.com
+  validations:
+    required: false
+- type: input
+  id: Reply
+  attributes:
+    label: Reply to
+    description: Reply to address?
+    placeholder: ex. marketing@marketing.com
+  validations:
+    required: false
+- type: input
+  id: test
+  attributes:
+    label: Test Email Recepients
+    description: Who will receive the test email?
+    placeholder: ex. marketing@marketing.com
+  validations:
+    required: false
+- type: input
+  id: sfid
+  attributes:
+    label: Salesforce Campaign ID
+    description: Provide Salesforce Campaign ID
+    placeholder: ex. 7013o000002SggXXXX
+  validations:
+    required: false
