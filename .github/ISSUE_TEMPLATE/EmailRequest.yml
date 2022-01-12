@@ -1,7 +1,18 @@
 ---
 name: Single Email Request
 description: Single Email template
-body:
+body: 
+- type: dropdown
+  id: Region
+  attributes:
+    label: What region are you in?
+    description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
+    options:
+        - AMER
+        - APAC
+        - EMEA
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Proposed Audience
@@ -15,16 +26,6 @@ body:
     description: Provide Test and Send date
     placeholder: ex. Test 01/06/2022 Send 01/08/2022
   validations:
-    required: true
-- type: dropdown
-  attributes:
-    label: What region are you in?
-    description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
-    options:
-        - AMER
-        - APAC
-        - EMEA
-   validations:
     required: true
 - type: input
   id: Approval
