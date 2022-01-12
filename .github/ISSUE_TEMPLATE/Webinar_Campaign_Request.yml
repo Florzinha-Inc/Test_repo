@@ -38,27 +38,6 @@ body:
     attributes:
       label: SalesForce Campaign Id
       description: What is the SalesForce Campaign Id?
-      placeholder: 
+      placeholder: 700033eedgrAAK
     validations:
       required: false
-  - type: input
-    id: Webinartool
-    attributes:
-      label: What tool are you using to host your Webinar?
-      description: Zoom or GoldCast or GoToWebinar
-      placeholer: GoldCast
-    validations:
-      required: true
-  - type: dropdown
-    id: page
-    attributes:
-      label: How many landing pages are needed?
-      description: Please select the number of landing pages needed for this campaign
-      options:
-        - One
-        - Two
-        - Three
-        - Four
-        - Five or more
-    validations:
-      required: true
