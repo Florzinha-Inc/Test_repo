@@ -4,8 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for opening a Campaign Support ticket.
-        
+        Thanks for opening a Campaign Support ticket.   
   - type: input
     id: Name
     attributes:
@@ -14,7 +13,6 @@ body:
       placeholder: Email DevOps roundtable
     validations:
       required: true
-
   - type: textarea
     id: info
     attributes:
@@ -23,7 +21,6 @@ body:
       render: shell
     validations:
       required: true
-
   - type: dropdown
     id: Region
     attributes:
@@ -36,7 +33,6 @@ body:
         - GLOBAL
     validations:
       required: true
-
   - type: input
     id: SFDC
     attributes:
@@ -45,7 +41,7 @@ body:
       placeholder: 7013o000002SggWAAS
     validations:
       required: false
-     
+      
   - type: input
     id: Webinartool
     attributes:
@@ -54,7 +50,6 @@ body:
       placeholer: GoldCast
     validations:
       required: true
-
       
   - type: dropdown
     id: page
@@ -75,9 +70,9 @@ body:
     attributes:
       label: Webinar technical information
       description: Depending on the tool you are using please previde us with either
-                   Zoom -> Zoom link
-                   GoldCast -> Goldcast event id and Goldcast form id
-                   GoToWebinar -> Registration URL and Webinar Id
+                   Zoom link
+                   Goldcast event id and Goldcast form id
+                   Registration URL and Webinar Id
       placeholder: Links to any of the above
     validations:
       required: true
