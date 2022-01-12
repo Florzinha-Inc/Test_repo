@@ -86,7 +86,7 @@ body:
     id: Webinar tool
     attributes:
       label: What tool are you using to host your Webinar?
-      description: Ex.: Zoom or GoldCast or GoToWebinar
+      description: Zoom or GoldCast or GoToWebinar
       placeholer: GoldCast
     validations:
       required: true
