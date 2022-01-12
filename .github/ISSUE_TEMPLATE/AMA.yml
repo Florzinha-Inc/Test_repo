@@ -1,0 +1,29 @@
+name: Ask Me Anything
+description: If you have a question or wants to check if we can help you with something.
+title: "[AMA]: "
+labels: ["AMA", "triage"]
+assignees:
+  - brunochester
+  - mike421453
+  - jason-araujo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening this AMA request
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: Feel free to add as much detail as possible to your context
+      placeholder: What is MOPs favorite T.V show?
+    validations:
+      required: true
