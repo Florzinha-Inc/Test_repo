@@ -22,7 +22,8 @@ body:
   id: sfid
   attributes:
     label: Salesforce Campaign ID
-    description: Provide Salesforce Campaign ID
+    description: It can be found in the SFDC campaign URL after /Campaign/. 7013o000002CbkaAAC in the eaxple below
+                 https://github.lightning.force.com/lightning/r/Campaign/7013o000002CbkaAAC/view
     placeholder: ex. 7013o000002SggXXXX
   validations:
     required: false
