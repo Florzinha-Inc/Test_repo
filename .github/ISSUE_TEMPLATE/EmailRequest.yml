@@ -13,7 +13,6 @@ body:
       placeholder: You've been invited to GitHub DevOps roundtable
     validations:
       required: true
-
   - type: textarea
     id: Picture
     attributes:
@@ -22,8 +21,6 @@ body:
       render: shell
     validations:
       required: true
-
-      
   - type: textarea
     id: Audience
     attributes:
