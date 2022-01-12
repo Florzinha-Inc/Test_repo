@@ -99,6 +99,6 @@ body:
                    Zoom -> Zoom link
                    GoldCast -> Goldcast event id and Goldcast form id
                    GoToWebinar -> Registration URL and Webinar Id
-      placeholder: Links to any of the above.
+      placeholder: Links to any of the above
     validations:
       required: true
