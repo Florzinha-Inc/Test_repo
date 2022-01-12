@@ -78,3 +78,8 @@ body:
     placeholder: ex. 7013o000002SggXXXX
   validations:
     required: false
+- type: input
+  attributes:
+    label: Email name
+    description: Please add the email name followed by its send order.
+    placeholder: Campaign_name-Invite-Email-1
