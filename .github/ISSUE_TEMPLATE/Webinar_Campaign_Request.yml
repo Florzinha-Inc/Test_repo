@@ -50,7 +50,7 @@ body:
     attributes:
       label: Proposed campaign audience
       description: What audience are you targeting for this campaign?
-      placeholder: "Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S"
+      placeholder: Audience traits
     validations:
       required: false
            
