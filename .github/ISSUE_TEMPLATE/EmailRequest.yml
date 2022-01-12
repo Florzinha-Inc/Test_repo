@@ -29,7 +29,7 @@ body:
   attributes:
     label: Approved by
     description: The content is approved by
-    placeholder: ex. John Sample
+    placeholder: ex. Approvers name
   validations:
     required: false
 - type: input
