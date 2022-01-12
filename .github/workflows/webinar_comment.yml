@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  issue_comment:
+    types:
+    - created
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == 'Nurture'}}
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpenedReactions: 'rocket'
+          issuesOpenedComment: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @{{ author }}, great progress! I have assigned this issue and labeled it :rocket:
+            
+            **Now, let's go to the next step**
+            I see that you are working on Nurtures. Please type the command "/campaign-email" in the comment box below to start giving us the details for all the email build.
+  
+            **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
+            **Pro-tip II:** Please type the command otherwise it wont work. Yep, copy and paste wont do it unfortunately.
