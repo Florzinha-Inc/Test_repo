@@ -83,3 +83,24 @@ body:
     label: Email name
     description: Please add the email name followed by its send order.
     placeholder: Campaign_name-Invite-Email-1
+- type: input
+  attributes:
+    label: Email pre-header
+    description: Please add the pre-header for your email
+    placeholder: You are invited to GitHub webinar
+- type: input
+  attributes:
+    label: Email subject
+    description: Add the email subject
+    placeholder: GitHub webinar coming up
+- type: textarea
+  attributes:
+    label: Email header image
+    description: Add the header image
+    placeholder: Drag and drop the image from your computer here
+- type: textarea
+  attributes:
+    label: Email body
+    description: Add the content of your email
+    placeholder: Need help with Markdown email templates? Feel free to use one of these.
+
