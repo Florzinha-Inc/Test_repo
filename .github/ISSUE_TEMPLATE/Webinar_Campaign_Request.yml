@@ -69,7 +69,7 @@ body:
       required: true
       
   - type: dropdown
-    id: landing page
+    id: landingpage
     attributes:
       label: How many landing pages are needed?
       description: Please select the number of lnding pages needed for this campaign
@@ -83,7 +83,7 @@ body:
       required: true
   
   - type: input
-    id: Webinar tool
+    id: Webinartool
     attributes:
       label: What tool are you using to host your Webinar?
       description: Zoom or GoldCast or GoToWebinar
@@ -92,7 +92,7 @@ body:
       required: true
       
   - type: textarea
-    id: Webinar info
+    id: Webinarinfo
     attributes:
       label: Webinar technical information
       description: Depending on the tool you are using please previde us with either
