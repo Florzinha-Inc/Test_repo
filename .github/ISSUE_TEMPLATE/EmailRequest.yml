@@ -1,6 +1,6 @@
 ---
 name: 2. Single Email Request
-description: Email template for Single email requests
+description: Single Email template
 body:
 - type: textarea
   attributes:
@@ -32,20 +32,6 @@ body:
     placeholder: ex. John Sample
   validations:
     required: false
-- type: input
-  id: Subject
-  attributes:
-    label: Subject
-    description: What is Email Subject?
-    placeholder: ex. Inivitation Email
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Email Copy
-    placeholder: "Email copy, body, text, pictures etc"
-  validations:
-    required: true
 - type: input
   id: From
   attributes:
