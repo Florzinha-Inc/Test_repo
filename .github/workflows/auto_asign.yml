@@ -9,7 +9,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'hooray'
           issuesOpenedComment: |
-            ![](https://i.gifer.com/SlX.gif)
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
             👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
@@ -34,7 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'rocket'
           issuesOpenedComment: |
-            ![](docs/hubot.gif)
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
             @{{ author }}, great progress! I have assigned this issue and labeled it. Now it is your turn to give us the assets details.
             Let's start with the emails: please type the command "/campaign-email" to start giving us the details for the email build.
