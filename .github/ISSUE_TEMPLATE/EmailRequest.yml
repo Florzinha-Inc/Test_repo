@@ -1,5 +1,5 @@
 ---
-name: 2. Single Email Request
+name: 3. Single Email Request
 description: Single Email template
 body:
 - type: textarea
@@ -13,7 +13,7 @@ body:
   attributes:
     label: Test and Send Dates
     description: Provide Test and Send date
-    placeholder: ex. 06/01/2021
+    placeholder: ex. Test: 06/01/2022 Send: 08/01/2022
   validations:
     required: true
 - type: input
@@ -52,15 +52,15 @@ body:
   id: test
   attributes:
     label: Test Email Recepients
-    description: Who will receive the test email?
-    placeholder: ex. marketing@marketing.com
+    description: Who should receive the test email?
+    placeholder: ex. brunochester@github.com
   validations:
     required: false
 - type: input
   id: sfid
   attributes:
     label: Salesforce Campaign ID
-    description: Provide Salesforce Campaign ID
+    description: Please provide Salesforce Campaign ID if this email is part of a SFDC campaign
     placeholder: ex. 7013o000002SggXXXX
   validations:
     required: false
