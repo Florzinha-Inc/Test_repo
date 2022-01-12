@@ -24,7 +24,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}, {"keywords": ["Webinar"], "labels": ["Webinar"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
   slash:
