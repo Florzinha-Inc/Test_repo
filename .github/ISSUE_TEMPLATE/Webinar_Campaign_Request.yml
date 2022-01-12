@@ -5,6 +5,7 @@ body:
     attributes:
       value: |
         Thanks for opening a Campaign Support ticket.
+        
   - type: input
     id: Name
     attributes:
@@ -44,17 +45,7 @@ body:
       placeholder: 7013o000002SggWAAS
     validations:
       required: false
-      
-  - type: textarea
-    id: Audience
-    attributes:
-      label: Proposed campaign audience
-      description: What audience are you targeting for this campaign?
-      placeholder: Audience traits
-    validations:
-      required: false
-           
-  
+     
   - type: input
     id: Webinartool
     attributes:
@@ -76,5 +67,17 @@ body:
         - Three
         - Four
         - Five or more
+    validations:
+      required: true
+      
+ - type: textarea
+    id: Webinarinfo
+    attributes:
+      label: Webinar technical information
+      description: Depending on the tool you are using please previde us with either
+                   Zoom -> Zoom link
+                   GoldCast -> Goldcast event id and Goldcast form id
+                   GoToWebinar -> Registration URL and Webinar Id
+      placeholder: Links to any of the above
     validations:
       required: true
