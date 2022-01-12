@@ -1,0 +1,45 @@
+---
+name: Lead Upload Request
+description: MOPS internal Lead Upload template
+body:
+- type: input
+  id: Master
+  attributes:
+    label: Master Issue Link
+    description: Link to master Issue for this component
+    placeholder: ex. https://github.com/github/marketing-operations/issues/3882
+  validations:
+    required: true
+- type: input
+  id: destination
+  attributes:
+    label: Lead Upload to Eloqua or SFDC
+    description: Please indicate where the leads will be uploaded
+    placeholder: Eloqua
+  validations:
+    required: false
+- type: input
+  id: sfid
+  attributes:
+    label: Salesforce Campaign ID
+    description: Provide Salesforce Campaign ID
+    placeholder: ex. 7013o000002SggXXXX
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Please submit an Excel/CSV/Google Sheets document with the following required fields.
+            First Name,
+            Last Name,
+            Full Name,
+            Email address,
+            Job Title,
+            Company Name,
+            State (Two-digit code),
+            Country (Two-digit code),
+            Lead Source (Please ensure this is in the exact format as reflected in Salesforce),
+            SFDC Campaign ID (You can find this 15 character string on the URL for the SFDC Campaign),
+            Lead Owner (if leads are preassigned),
+    placeholder: Lead file
+  validations:
+    required: true
