@@ -44,8 +44,8 @@ body:
   - type: textarea
     id: Video
     attributes:
-      label: Zoom link or Webinar and form information
-      description: Provide webinar information
-      placeholder: ex. link to Zoom or Goldcast Event and Form info or GoToWebinar Registration url and webinar id
+      label: Webinar technical infomation
+      description: Please let us know the tool you will be using and the webinar specifications
+      placeholder: ex. link to Zoom or Goldcast Event and Form id or GoToWebinar Registration url and webinar id
     validations:
       required: false
