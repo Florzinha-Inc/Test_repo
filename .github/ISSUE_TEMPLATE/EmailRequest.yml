@@ -3,16 +3,16 @@ name: Single Email Request
 description: Single Email template
 body:
 - type: dropdown
-    id: Region
-    attributes:
-      label: What region are you in?
-      description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
-      options:
+  id: Region
+  attributes:
+    label: What region are you in?
+    description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
+    options:
         - AMER
         - APAC
         - EMEA
-    validations:
-      required: true
+   validations:
+    required: true
 - type: textarea
   attributes:
     label: Proposed Audience
