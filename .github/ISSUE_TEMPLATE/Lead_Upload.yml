@@ -3,18 +3,17 @@ name: Lead Upload Request
 description: MOPS Lead Upload template
 body:
 - type: dropdown
-    id: Region
-    attributes:
-      label: What region are these leads from?
-      description: AMER, APAC, EMEA, or GLOBAL.
-      options:
+  id: Region
+  attributes:
+    label: What region are these leads from?
+    description: AMER, APAC, EMEA, or GLOBAL.
+    options:
         - AMER
         - APAC
         - EMEA
         - GLOBAL
-    validations:
-      required: true
-      
+  validations:
+    required: true   
 - type: input
   id: Master
   attributes:
