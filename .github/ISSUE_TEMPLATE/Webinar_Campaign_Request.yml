@@ -53,21 +53,7 @@ body:
       placeholder: Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S
     validations:
       required: false
-      
-  - type: dropdown
-    id: email
-    attributes:
-      label: How many emails are needed?
-      description: Please select the number of emails needed for this campaign
-      options:
-        - One
-        - Two
-        - Three
-        - Four
-        - Five or more
-    validations:
-      required: true
-      
+           
   
   - type: input
     id: Webinartool
