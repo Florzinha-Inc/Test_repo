@@ -1,6 +1,6 @@
 ---
 name: Lead Upload Request
-description: MOPS internal Lead Upload template
+description: MOPS Lead Upload template
 body:
 - type: input
   id: Master
@@ -28,18 +28,10 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: Please submit an Excel/CSV/Google Sheets document with the following required fields.
-            First Name,
-            Last Name,
-            Full Name,
-            Email address,
-            Job Title,
-            Company Name,
-            State (Two-digit code),
-            Country (Two-digit code),
-            Lead Source (Please ensure this is in the exact format as reflected in Salesforce),
-            SFDC Campaign ID (You can find this 15 character string on the URL for the SFDC Campaign),
-            Lead Owner (if leads are preassigned),
+    label: Please submit a Google Sheets document following this format
+           https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
+           If leads are preassigned, use this format
+           https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
     placeholder: Lead file
   validations:
     required: true
