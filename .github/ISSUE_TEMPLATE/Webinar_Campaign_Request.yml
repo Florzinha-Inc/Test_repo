@@ -69,10 +69,10 @@ body:
       required: true
       
   - type: dropdown
-    id: landingpage
+    id: page
     attributes:
       label: How many landing pages are needed?
-      description: Please select the number of lnding pages needed for this campaign
+      description: Please select the number of landing pages needed for this campaign
       options:
         - One
         - Two
