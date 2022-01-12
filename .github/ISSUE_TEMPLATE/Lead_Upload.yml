@@ -28,7 +28,8 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: Please submit a Google Sheets document following this format
+    label: Please link us to the Google Sheet file with the leads to be uploaded
+    description: Please submit a Google Sheets document following this format
            https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
            If leads are preassigned, use this format
            https://docs.google.com/spreadsheets/d/1KWxXlpftZ4j9HFfpKgyQAhkGmqTS0UkmjyjACnnhddg/edit?usp=sharing
