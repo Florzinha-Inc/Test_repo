@@ -1,0 +1,48 @@
+   
+name: Auto Comment
+on: [issues]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpenedReactions: 'hooray'
+          issuesOpenedComment: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
+            I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
+            But first let's keep working together to ensure that you have given us as much context as possible prior to their Triage.
+            
+            Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
+  test:
+    needs: run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "both"
+          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  slash:
+    needs: test
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == 'More information about this nurture'}}
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpenedReactions: 'rocket'
+          issuesOpenedComment: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @{{ author }}, great progress! I have assigned this issue and labeled it :rocket:
+            
+            **Now, let's go to the next step**
+            I see that you are working on Nurtures. Please type the command "/campaign-email" in the comment box below to start giving us the details for all the email build.
+  
+            **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
+            **Pro-tip II:** Please type the command otherwise it wont work. Yep, copy and paste wont do it unfortunately.
