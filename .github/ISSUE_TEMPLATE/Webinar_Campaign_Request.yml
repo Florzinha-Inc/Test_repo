@@ -63,15 +63,18 @@ body:
       placeholer: GoldCast
     validations:
       required: true
+
       
-  - type: textarea
-    id: Webinarinfo
+  - type: dropdown
+    id: page
     attributes:
-      label: Webinar technical information
-      description: Depending on the tool you are using please previde us with either
-                   Zoom -> Zoom link
-                   GoldCast -> Goldcast event id and Goldcast form id
-                   GoToWebinar -> Registration URL and Webinar Id
-      placeholder: Links to any of the above
+      label: How many landing pages are needed?
+      description: Please select the number of landing pages needed for this campaign
+      options:
+        - One
+        - Two
+        - Three
+        - Four
+        - Five or more
     validations:
       required: true
