@@ -60,11 +60,11 @@ body:
       label: How many emails are needed?
       description: Please select the number of emails needed for this campaign
       options:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5 or more
+        - One
+        - Two
+        - Three
+        - Four
+        - Five or more
     validations:
       required: true
       
@@ -74,11 +74,11 @@ body:
       label: How many landing pages are needed?
       description: Please select the number of lnding pages needed for this campaign
       options:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5 or more
+        - One
+        - Two
+        - Three
+        - Four
+        - Five or more
     validations:
       required: true
   
