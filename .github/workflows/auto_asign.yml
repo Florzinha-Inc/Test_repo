@@ -36,3 +36,12 @@ jobs:
           title-or-body: "both"
           parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["Webinar"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          
+  next-step:
+    if: github.event.label.name == 'Webinar'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          body: |
+            This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
