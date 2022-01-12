@@ -9,7 +9,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'hooray'
           issuesOpenedComment: |
-            ![](docs/hubot.gif)
+            ![](https://raw.githubusercontent.com/github/hubot-classic/master/docs/hubot.gif?token=GHSAT0AAAAAABLFIUJ5TF4YP5TGIXV4ZAHMYPIRF2A)
             
             👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
