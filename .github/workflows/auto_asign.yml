@@ -29,7 +29,6 @@ jobs:
 
   slash:
     needs: test
-    if: '[ {"keywords": ["Nurture"], {"keywords": ["Webinar"], {"keywords": ["Email"] }]'
     runs-on: ubuntu-latest
     steps:
       - uses: wow-actions/auto-comment@v1
@@ -42,7 +41,7 @@ jobs:
             @{{ author }}, great progress! I have assigned this issue and labeled it :rocket:
             
             **Now, let's go to the next step:**
-            Please type the command "/campaign-email" in the comment box below to start giving us the details for the email build.
-            
+            Working on Nurtures, Webinar, or Single Emails? Please type the command "/campaign-email" in the comment box below to start giving us the details for the email build.
+  
             **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
             **Pro-tip II:** Please type the command otherwise it won't work. Yep, copy and paste won't do it unfortunately.
