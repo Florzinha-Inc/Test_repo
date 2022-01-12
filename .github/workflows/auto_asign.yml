@@ -24,12 +24,13 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}, {"keywords": ["Webinar"], "labels": ["Webinar"]}]'
+          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
   slash:
     needs: test
     runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == 'More information about this nurture'}}
     steps:
       - uses: wow-actions/auto-comment@v1
         with:
@@ -40,8 +41,8 @@ jobs:
             
             @{{ author }}, great progress! I have assigned this issue and labeled it :rocket:
             
-            **Now, let's go to the next step:**
-            Working on Nurtures, Webinar, or Single Emails? Please type the command "/campaign-email" in the comment box below to start giving us the details for the email build.
+            **Now, let's go to the next step**
+            I see that you are working on Nurtures. Please type the command "/campaign-email" in the comment box below to start giving us the details for all the email build.
   
             **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
-            **Pro-tip II:** Please type the command otherwise it won't work. Yep, copy and paste won't do it unfortunately.
+            **Pro-tip II:** Please type the command otherwise it wont work. Yep, copy and paste wont do it unfortunately.
