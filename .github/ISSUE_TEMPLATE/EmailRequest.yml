@@ -1,5 +1,5 @@
 ---
-name: 3. Single Email Request
+name: 4. Single Email Request
 description: Single Email template
 body:
 - type: textarea
