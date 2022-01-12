@@ -38,7 +38,7 @@ body:
     attributes:
       label: SalesForce Campaign Id
       description: What is the SalesForce Campaign Id?
-      placeholder: 7013o000002SggWAAS
+      placeholder: 
     validations:
       required: false
   - type: input
