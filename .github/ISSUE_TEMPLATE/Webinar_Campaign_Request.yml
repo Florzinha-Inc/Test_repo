@@ -41,3 +41,11 @@ body:
       placeholder: 700033eedgrAAK
     validations:
       required: false
+  - type: input
+    id: Video
+    attributes:
+      label: Zoom link or Webinar and form information
+      description: Provide webinar information
+      placeholder: ex. link to Zoom or Goldcast Event and Form info or GoToWebinar event info
+    validations:
+      required: false
