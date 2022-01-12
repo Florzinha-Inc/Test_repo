@@ -34,18 +34,6 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["Webinar"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
+          parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["help-wanted"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
-  next-step:
-    if: ${{ github.event.comment.body == 'Webinar technical infomation'}}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: wow-actions/auto-comment@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpenedReactions: 'hooray'
-          issuesOpenedComment: |
-            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
-            
-            👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
