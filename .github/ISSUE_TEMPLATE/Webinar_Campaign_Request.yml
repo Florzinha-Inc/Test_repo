@@ -41,38 +41,3 @@ body:
       placeholder: 7013o000002SggWAAS
     validations:
       required: false
-      
-  - type: input
-    id: Webinartool
-    attributes:
-      label: What tool are you using to host your Webinar?
-      description: Zoom or GoldCast or GoToWebinar
-      placeholer: GoldCast
-    validations:
-      required: true
-      
-  - type: dropdown
-    id: page
-    attributes:
-      label: How many landing pages are needed?
-      description: Please select the number of landing pages needed for this campaign
-      options:
-        - One
-        - Two
-        - Three
-        - Four
-        - Five or more
-    validations:
-      required: true
-      
- - type: textarea
-    id: Webinarinfo
-    attributes:
-      label: Webinar technical information
-      description: Depending on the tool you are using please previde us with either
-                   Zoom link
-                   Goldcast event id and Goldcast form id
-                   Registration URL and Webinar Id
-      placeholder: Links to any of the above
-    validations:
-      required: true
