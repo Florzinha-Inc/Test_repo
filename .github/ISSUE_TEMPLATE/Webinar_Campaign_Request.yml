@@ -1,0 +1,104 @@
+name: Webinar Campaign support request - MOPs
+description: Request support for a Webinar campaign with 1+ emails and Landing pages
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening a Campaign Support ticket.
+  - type: input
+    id: Name
+    attributes:
+      label: Campaign name
+      description: What is the campaign name?
+      placeholder: Email DevOps roundtable
+    validations:
+      required: true
+
+  - type: textarea
+    id: info
+    attributes:
+      label: More information about campaign
+      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've one opened already.
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Region
+    attributes:
+      label: What region are you targeting?
+      description: AMER, APAC, EMEA, or GLOBAL.
+      options:
+        - AMER
+        - APAC
+        - EMEA
+        - GLOBAL
+    validations:
+      required: true
+
+  - type: input
+    id: SFDC
+    attributes:
+      label: SalesForce Campaign Id
+      description: What is the SalesForce Campaign Id?
+      placeholder: 7013o000002SggWAAS
+    validations:
+      required: false
+      
+  - type: textarea
+    id: Audience
+    attributes:
+      label: Proposed campaign audience
+      description: What audience are you targeting for this campaign?
+      placeholder: Attendees from the DevOps and Developer Experience week at GitHub InFocus located in the U.S
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: email
+    attributes:
+      label: How many emails are needed?
+      description: Please select the number of emails needed for this campaign
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5 or more
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: landing page
+    attributes:
+      label: How many landing pages are needed?
+      description: Please select the number of lnding pages needed for this campaign
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5 or more
+    validations:
+      required: true
+  
+  - type: input
+    id: Webinar tool
+    attributes:
+      label: What tool are you using to host your Webinar?
+      description: Ex.: Zoom or GoldCast or GoToWebinar
+      placeholer: GoldCast
+    validations:
+      required: true
+      
+  - type: textarea
+    id: Webinar info
+    attributes:
+      label: Webinar technical information
+      description: Depending on the tool you are using please previde us with either
+                   Zoom -> Zoom link
+                   GoldCast -> Goldcast event id and Goldcast form id
+                   GoToWebinar -> Registration URL and Webinar Id
+      placeholder: Links to any of the above.
+    validations:
+      required: true
