@@ -13,7 +13,9 @@ jobs:
             
             👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
             I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
-            By the way, please make sure you have given us as much context as possible.
+            But first let's keep working together to ensure that you have given us as much context as possible prior to their Triage.
+            
+            Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
 
   test:
     needs: run
@@ -38,8 +40,8 @@ jobs:
             
             @{{ author }}, great progress! I have assigned this issue and labeled it :rocket:
             
-            **Now it is your turn to give us the assets details.**
-            Let's start with the emails: please type the command "/campaign-email" to start giving us the details for the email build.
+            **Now, let's go to the next step:**
+            Please type the command "/campaign-email" in the comment box below to start giving us the details for the email build.
             
             **Pro-tip:** Type it as many times as necessary according to the number of emails required for this campaign
             **Pro-tip II:** Please type the command otherwise it won't work. Yep, copy and paste won't do it unfortunately.
