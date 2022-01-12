@@ -26,3 +26,12 @@ jobs:
           title-or-body: "both"
           parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "both"
+          parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["Webinar"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
