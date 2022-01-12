@@ -1,0 +1,66 @@
+name: Nurture campaign support request - MOPs
+description: Request support for a Nurture campaign
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening a Nurture Support ticket.   
+  - type: dropdown
+    id: Region
+    attributes:
+      label: What region are you in?
+      description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
+      options:
+        - AMER
+        - APAC
+        - EMEA
+    validations:
+      required: true
+  - type: input
+    id: Name
+    attributes:
+      label: Nurture name
+      description: What is the nurture name?
+      placeholder: Email DevOps roundtable
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: More information about this nurture
+      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've one opened already.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: SFDC
+    attributes:
+      label: SalesForce Campaign Id
+      description: What is the SalesForce Campaign Id?
+      placeholder: 700033eedgrAAK
+    validations:
+      required: false
+  - type: textarea
+    id: Exit
+    attributes:
+      label: Nurture exit criteria
+      description: Please let us know what the exit criteria are for this nurture
+      placeholder: ex. user openned and clicked on an email asset or user submitted a contact us form
+    validations:
+      required: false
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Email frequency
+      description: Please let us know in what frequency you would like the emails to be sent
+      placeholder: ex. start on xx/xx/xxxx and send following emails weekly
+    validations:
+      required: false
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience
+      description: Please let us know the audience you are targeting
+      placeholder: ex. Users who opted-in for an enterprise acount in EMEA during Q3/2021
+    validations:
+      required: false
