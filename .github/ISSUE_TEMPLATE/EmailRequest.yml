@@ -13,7 +13,7 @@ body:
   attributes:
     label: Test and Send Dates
     description: Provide Test and Send date
-    placeholder: ex. Test: 06/01/2022 Send: 08/01/2022
+    placeholder: ex. Test 06/01/2022 Send 08/01/2022
   validations:
     required: true
 - type: input
