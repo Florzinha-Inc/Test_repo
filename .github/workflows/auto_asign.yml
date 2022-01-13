@@ -24,7 +24,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["Bug"], "labels": ["Triage"], "assignees": ["mike421453", "brunochester", "jason-araujo"]}, {"keywords": ["[AMA]:", "AMA request"], "labels": ["Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
   
@@ -44,8 +44,10 @@ jobs:
             
             I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
-            :sparkle: Nurture campaigns are always fun! :sparkle: Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
-            Feel free to use this /create-email as many times as needed until you have added all email information needed.
+            :sparkle: Nurture campaigns are always fun!
+            
+            Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
+            Feel free to use the `/create-email` as many times as needed until you have added all email information needed.
 
   Webinar-comment:
     needs: test
@@ -63,11 +65,90 @@ jobs:
             
             I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
-            For all Webinars we usually have a set of assets:
-            1 - Subscription Landing Page -> When ready please run `/landing-page` to start building this asset
-            2 - Emails (invite, follow-up, thank-you) -> When ready please run `/create-email` as many times as needed to build all necessary emails 
-            3 - Thank you page -> When ready please run `/thank-you-page` to start building this asset
-            4 - Lead upload -> When ready please run `/lead-upload` to give us the necessary information
+            For all Webinars we usually follow the following structure:
+            **1 -** Subscription Landing Page -> When ready please run `/landing-page` to start building this asset
+            **2 -** Emails (invite, follow-up, thank-you) -> When ready please run `/create-email` as many times as needed to build all necessary emails 
+            **3 -** Thank you page -> When ready please run `/thank-you-page` to start building this asset
+            **4 -** Lead upload -> When ready please run `/lead-upload` to give us the necessary information
             
-            **Remember:** One at a time all /commands listed above need to be typed on a comment box :rocket:
+            **Remember:** One at a time all `/commands` listed above need to be typed on a comment box like the one below :point_down:
           
+  single-email-comment:
+    needs: test
+    if: github.event.label.name == 'Single-Email'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            Single Emails are straight forward and I believe we already have all that is needed to work on it for you. 
+            
+            In case of any additional questions someone from the team will get in touch.
+            
+            Thank you! 
+  
+  Lead-Upload-comment:
+    needs: test
+    if: github.event.label.name == 'Lead Upload'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            If these are leads from a Webinar that we worked on together, we would ask you to go to that issue and follow the structions for Lead Upload step there. 
+            
+            If this Lead Upload doesn't come from a Webinar that we worked on together you are in the right place and we will pick it up from here :smile:
+            
+            Thank you!
+            
+  Report-Bug-comment:
+    needs: test
+    if: github.event.label.name == 'help-wanted'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            We take Bug Reports very seriously and I've already added our entire team to look at this.
+            
+            In case this is more like a question and not really a bug please open a AMA issue instead and we will be happy to help you out.
+            
+            Thank you! 
+            
+  AMA-comment:
+    needs: test
+    if: github.event.label.name == 'AMA'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            We love questions and I've assigned no one less than @mike421453 to look into this. :sparkle:          
