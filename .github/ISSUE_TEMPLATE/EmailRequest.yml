@@ -106,8 +106,8 @@ body:
 - type: textarea
   attributes:
     label: Email body
-    description: Add the content of your email
-    placeholder: Need help with Markdown email templates? Feel free to use one of these.
+    description: Need help with Markdown email templates? Feel free to use one of [these.](https://github.com/GitHub-MOPs/slash-commands/issues/22)
+    placeholder: Starting typing and dragging images here
   validations:
     required: true  
 
