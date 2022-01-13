@@ -1,6 +1,8 @@
 ---
 name: 3. Lead Upload Request
 description: MOPS Lead Upload template
+title: "[Lead Upload]: "
+labels: ["Lead Upload"]
 body:
 - type: dropdown
   id: Region
@@ -11,7 +13,6 @@ body:
         - AMER
         - APAC
         - EMEA
-        - GLOBAL
   validations:
     required: true   
 - type: input
