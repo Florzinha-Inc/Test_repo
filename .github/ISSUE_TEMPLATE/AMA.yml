@@ -1,4 +1,5 @@
-name: 5. Ask Me Anything
+---
+name: Ask Me Anything
 description: If you have a question or wants to check if we can help you with something.
 title: "[AMA]: "
 labels: ["AMA"]
@@ -18,7 +19,7 @@ body:
   - type: textarea
     id: question
     attributes:
-      label: What is your question?
+      label: What is your question? Ask me anything.
       description: Feel free to add as much detail as possible to your context
       placeholder: What is MOPs favorite T.V show?
     validations:
