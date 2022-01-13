@@ -96,14 +96,18 @@ body:
     label: Email subject
     description: Add the email subject
     placeholder: GitHub webinar coming up
+  validations:
+    required: true  
 - type: textarea
   attributes:
     label: Email header image
-    description: Add the header image
+    description: Add the header image if you plan on using one, otherwise leave this field blank.
     placeholder: Drag and drop the image from your computer here
 - type: textarea
   attributes:
     label: Email body
     description: Add the content of your email
     placeholder: Need help with Markdown email templates? Feel free to use one of these.
+  validations:
+    required: true  
 
