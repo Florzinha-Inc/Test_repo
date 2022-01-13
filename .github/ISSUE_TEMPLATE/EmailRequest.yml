@@ -1,6 +1,8 @@
 ---
 name: Single Email Request
 description: Single Email template
+title: "[Single Email]: "
+labels: ["Single-Email"]
 body: 
 - type: dropdown
   id: Region
