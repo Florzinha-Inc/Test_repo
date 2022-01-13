@@ -47,4 +47,27 @@ jobs:
             :sparkle: Nurture campaigns are always fun! :sparkle: Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
             Feel free to use this /create-email as many times as needed until you have added all email information needed.
 
+  Webinar-comment:
+    needs: test
+    if: github.event.label.name == 'Webinar'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            For all Webinars we usually have a set of assets:
+            1 - Subscription Landing Page -> When ready please run `/landing-page` to start building this asset
+            2 - Emails (invite, follow-up, thank-you) -> When ready please run `/create-email` as many times as needed to build all necessary emails 
+            3 - Thank you page -> When ready please run `/thank-you-page` to start building this asset
+            4 - Lead upload -> When ready please run `/lead-upload` to give us the necessary information
+            
+            **Remember:** One at a time all /commands listed above need to be typed on a comment box :rocket:
           
