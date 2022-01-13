@@ -28,9 +28,9 @@ jobs:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
   
-  add-comment:
+  nurture-comment:
     needs: test
-    if: github.event.label.name == 'help-wanted'
+    if: github.event.label.name == 'Nurture'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -40,6 +40,9 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            **It worked** :sparkles: It worked :sparkles:
+            @{{ author }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            I see that you are working on a Nurture campaign. Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
+            Feel free to use this /command as many times as needed until you have added all email information needed.
 
           
