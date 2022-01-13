@@ -1,7 +1,7 @@
 ---
 name: Ask Me Anything
-description: If you have a question or wants to check if we can help you with something.
-title: "[AMA]: "
+description: Let us know your question
+title: "[Question]: "
 labels: ["Question"]
 body:
   - type: markdown
