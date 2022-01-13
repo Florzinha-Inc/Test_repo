@@ -52,7 +52,7 @@ body:
     description: Email from address?
     placeholder: ex. marketing@marketing.com
   validations:
-    required: false
+    required: true
 - type: input
   id: Reply
   attributes:
@@ -68,7 +68,7 @@ body:
     description: Who should receive the test email?
     placeholder: ex. brunochester@github.com
   validations:
-    required: false
+    required: true
 - type: input
   id: sfid
   attributes:
@@ -82,11 +82,15 @@ body:
     label: Email name
     description: Please add the email name followed by its send order.
     placeholder: Campaign_name-Invite-Email-1
+  validations:
+    required: true  
 - type: input
   attributes:
     label: Email pre-header
     description: Please add the pre-header for your email
     placeholder: You are invited to GitHub webinar
+  validations:
+    required: true  
 - type: input
   attributes:
     label: Email subject
