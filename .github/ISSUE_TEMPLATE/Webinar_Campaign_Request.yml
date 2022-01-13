@@ -1,5 +1,7 @@
 name: 1. Webinar Campaign support request
 description: Request support for a Webinar campaign with 1+ emails and Landing pages
+title: "[Webinar]: "
+labels: ["Webinar"]
 body:
   - type: markdown
     attributes:
