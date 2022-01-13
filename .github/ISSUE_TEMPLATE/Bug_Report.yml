@@ -1,7 +1,7 @@
 name: 6. Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["help-wanted"]
 assignees:
   - brunochester
   - mike421453
