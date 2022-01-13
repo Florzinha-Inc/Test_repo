@@ -1,11 +1,12 @@
 name: Like pizza
 
-on: [issues]
+on:
+  issue_comment:
 
 jobs:
   like-pizza:
     runs-on: ubuntu-latest
-    if: ${{ github.event.comment.body == 'Lead Upload to Eloqua and/or SFDC'}}
+    if: ${{ github.event.comment.body, 'Lead Upload to Eloqua and/or SFDC'}}
     steps:
       - name: Like pizza
         uses: actions/github-script@v4
