@@ -1,9 +1,6 @@
 name: Like pizza
 
-on:
-  issue_comment:
-    types:
-      - created
+on: [issues]
 
 jobs:
   like-pizza:
