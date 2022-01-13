@@ -27,14 +27,19 @@ jobs:
           parameters: '[ {"keywords": ["AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["GLOBAL"], "labels": ["GLOBAL", "Triage"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
-  label:
+  
+  add-comment:
     needs: test
+    if: github.event.label.name == 'help-wanted'
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
-      - uses: Naturalclar/issue-action@v2.0.2
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
         with:
-          title-or-body: "both"
-          parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["help-wanted"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-          
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            **It worked** :sparkles: It worked :sparkles:
+
           
