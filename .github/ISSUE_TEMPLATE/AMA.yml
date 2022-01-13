@@ -1,11 +1,7 @@
 name: 5. Ask Me Anything
 description: If you have a question or wants to check if we can help you with something.
 title: "[AMA]: "
-labels: ["AMA", "triage"]
-assignees:
-  - brunochester
-  - mike421453
-  - jason-araujo
+labels: ["AMA"]
 body:
   - type: markdown
     attributes:
