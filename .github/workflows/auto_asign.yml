@@ -40,9 +40,12 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            @{{ author }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            I see that you are working on a Nurture campaign. Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
+            👋 @{{ author }},
+            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            Nurture campaigns are always fun! Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
             Feel free to use this /command as many times as needed until you have added all email information needed.
 
           
