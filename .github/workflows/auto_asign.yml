@@ -37,3 +37,19 @@ jobs:
           parameters: '[ {"keywords": ["Webinar technical infomation"], "labels": ["help-wanted"]}, {"keywords": ["Nurture exit criteria"], "labels": ["Nurture"]}, {"keywords": ["Lead Upload to Eloqua and/or SFDC"], "labels": ["Lead-Upload"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           
+  like-pizza:
+    needs: label
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == 'Lead Upload to Eloqua and/or SFDC'}}
+    steps:
+      - name: Like pizza
+        uses: actions/github-script@v4
+        with:
+          script: |
+            github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: 'Deployment succeeded! ✅',
+            });
+          
