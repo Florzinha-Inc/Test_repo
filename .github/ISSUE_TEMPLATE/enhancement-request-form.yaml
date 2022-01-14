@@ -23,7 +23,7 @@ body:
     id: priority
     attributes:
       label: Priority Level
-      description: "If you select a High priority, please explain why in the Description field."
+      description: "Please explain why you selected this priority level in the Description field."
       options:
         - "High"
         - "Medium"
