@@ -20,7 +20,14 @@ body:
         **4. Email address**
         **5. Last SFDC Campaign ID**
         **6. Last SFDC Campaign status**
-        
+- type: input
+  id: gdprcompliance
+  attributes:
+    label: Opt-in Compliance check
+    description: Did the leads explicitly opted-in to receive sales/promotional communication from us? Determining this ensures compliance with various country, regional and state laws (GDPR, CANSPAM, CCPA).
+    placeholder: YES - I confirm that the leads have explicitly opted-in/ NO - Leads have not opted-in OR I am not sure
+  validations:
+    required: true       
 - type: dropdown
   id: Region
   attributes:
