@@ -1,13 +1,13 @@
 name: Enhancement or New Functionality Request
 description: Requesting a new capability or feature, or an improvement to an existing one
-title: "New Request: "
+title: "Batch: "
 labels: [help-wanted]
 body:
   - type: textarea
     id: business-group
     attributes:
       label: Who is the primary beneficiary of this work?
-      description: Please let us know your business group and how you believe this will beneficial.
+      description: Please let us know your business group or team.
     validations: 
       required: true
   - type: dropdown
