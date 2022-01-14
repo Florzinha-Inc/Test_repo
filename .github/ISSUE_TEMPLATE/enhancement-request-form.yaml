@@ -1,7 +1,7 @@
 name: Enhancement or New Functionality Request
 description: Requesting a new capability or feature, or an improvement to an existing one
 title: "Batch: "
-labels: [help-wanted grey]
+labels: [help-wanted, grey]
 body:
   - type: markdown
     attributes:
