@@ -56,4 +56,12 @@ body:
       description: Please let us know the tool you will be using and the webinar specifications
       placeholder: ex. link to Zoom or Goldcast Event and Form id or GoToWebinar Registration url and webinar id
     validations:
-      required: false
+      required: true
+  - type: input
+    id: test-approval
+    attributes:
+      label: Who should receive assets test for final approval
+      description: Provide final assets approver's contact
+      placeholder: brunochester@github.com
+    validations:
+      required: true    
