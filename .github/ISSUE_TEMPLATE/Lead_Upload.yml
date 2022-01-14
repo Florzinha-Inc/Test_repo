@@ -34,9 +34,9 @@ body:
     label: What region are these leads from?
     description: AMER, APAC, EMEA.
     options:
-        - AMER
-        - APAC
-        - EMEA
+        - I am based in AMER
+        - I am based in APAC
+        - I am based in EMEA
   validations:
     required: true   
 - type: input
