@@ -1,7 +1,7 @@
 ---
 name: Lead Upload Request
 description: MOPS Lead Upload template
-title: "[Lead Upload]: "
+title: "task: [Lead Upload] - "
 labels: ["Lead Upload"]
 body:
 - type: markdown
@@ -20,6 +20,9 @@ body:
         **4. Email address**
         **5. Last SFDC Campaign ID**
         **6. Last SFDC Campaign status**
+        **7. Lead Source**
+        **8. Country**
+        **9. State - _if leads are from the U.S_**
 - type: input
   id: gdprcompliance
   attributes:
