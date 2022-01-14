@@ -36,7 +36,8 @@ body:
     id: info
     attributes:
       label: More information about this nurture
-      description: Feel free to link us to a IDM Master issue you've one opened already. Please don't add any asset information here.
+      description: Feel free to link us to a IDM Master issue you've one opened already.
+      placeholder: Please don't add any asset information here.
       render: shell
     validations:
       required: true
