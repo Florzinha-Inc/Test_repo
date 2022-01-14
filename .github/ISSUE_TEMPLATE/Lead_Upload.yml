@@ -4,6 +4,22 @@ description: MOPS Lead Upload template
 title: "[Lead Upload]: "
 labels: ["Lead Upload"]
 body:
+- type: markdown
+    attributes:
+      value: |
+        ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+        
+        Hey there, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions. Because of that you will see me around a lot! Don't be a stranger :wink:
+        
+        Please go ahead and fill out the basic information needed for a Lead Upload below then hit `Submit new issue` and I'll be back with next steps.
+        
+        One last tip before I let you go... Even though we will be linking you to examples of how to format the lead upload document like a pro here are the fields you must have (they can't be blank):
+        - First Name
+        - Last Name
+        - Company Name
+        - Email address
+        - Last SFDC Campaign ID
+        - Last SFDC campaign status
 - type: dropdown
   id: Region
   attributes:
