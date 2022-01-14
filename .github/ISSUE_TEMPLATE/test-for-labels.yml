@@ -1,7 +1,7 @@
   name: Enhance
   description: Requesting a new capability or feature, or an improvement to an existing one
   title: "New Request: "
-  labels: 'To Be Triaged, enhancement'
+  labels: 'To Be Triaged, enhancement, to be triaged'
   body:
     - type: dropdown
       id: business-group
