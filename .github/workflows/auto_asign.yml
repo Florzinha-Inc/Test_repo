@@ -149,4 +149,20 @@ jobs:
             
             @${{ github.event.issue.user.login }}, please  provide a detailed description of your new SEO page. The more information, screen shots, and links you can provide, the sooner we can start development. 
             
-            Thank you!           
+            Thank you!
+  like-pizza:
+    needs: test
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == 'New SEO page addition'}}
+    steps:
+      - name: Like pizza
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const {owner, repo} = context.issue
+            github.reactions.createForIssueComment({
+              owner,
+              repo,
+              comment_id: context.payload.comment.id,
+              content: "+1",
+            });          
