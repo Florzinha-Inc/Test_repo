@@ -1,6 +1,6 @@
 name: Nurture campaign support request - MOPs
 description: Request support for a Nurture campaign
-title: "[Nurture]: "
+title: "Batch: [Nurture] - "
 labels: ["Nurture"]
 body:
   - type: markdown
