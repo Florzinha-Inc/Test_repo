@@ -66,9 +66,9 @@ jobs:
             I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
             For all Webinars we usually follow the following structure:
-            **1 -** Subscription Landing Page -> When ready please run `/landing-page` to start building this asset
-            **2 -** Emails (invite, follow-up, thank-you) -> When ready please run `/create-email` as many times as needed to build all necessary emails 
-            **3 -** Thank you page -> When ready please run `/thank-you-page` to start building this asset
+            **1 -** Subscription Landing Page -> When ready please run `/Webinar landing page` to start building this asset
+            **2 -** Emails (invite, follow-up, thank-you) -> When ready please run `/Email Builder` as many times as needed to build all necessary emails 
+            **3 -** Thank you page -> When ready please run `/Webinar thank you page` to start building this asset
             **4 -** Lead upload -> When ready please run `/lead-upload` to give us the necessary information
             
             **Remember:** One at a time all `/commands` listed above need to be typed on a comment box like the one below :point_down:
