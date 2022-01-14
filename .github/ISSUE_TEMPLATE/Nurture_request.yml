@@ -77,7 +77,7 @@ body:
     id: evergreen
     attributes:
       label: Is it an evergreen nurture?
-      description: Evergreen Nurture: you can use it all throughout the year adding people to it as they meet the criteria set.
+      description: Evergreen Nurtures can be used throughout the year by adding people to it as they meet the criteria set.
       options:
         - I want this campaign to be continuously sent to people as they meet the entrance criteria/audience
         - I want this campaign to be sent to the audience above just once
