@@ -24,7 +24,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["Bug"], "labels": ["Triage"], "assignees": ["mike421453", "brunochester", "jason-araujo"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "Triage"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "Triage"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["Triage"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
   
   nurture-comment:
@@ -116,7 +116,7 @@ jobs:
             
             Thank you!
             
-  Report-Bug-comment:
+  Enhancement-Report-comment:
     needs: test
     if: github.event.label.name == 'help-wanted'
     runs-on: ubuntu-latest
@@ -130,8 +130,6 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, we take Bug Reports very seriously and I've already added our entire team to look at this.
-            
-            In case this is more like a question and not really a bug please open a AMA issue instead and we will be happy to help you out.
+            @${{ github.event.issue.user.login }}, we have all that we need for the triage step and will getback to you soon. 
             
             Thank you!          
