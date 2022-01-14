@@ -25,7 +25,7 @@ body:
   attributes:
     label: Opt-in Compliance check
     description: Did the leads explicitly opted-in to receive sales/promotional communication from us? Determining this ensures compliance with various country, regional and state laws (GDPR, CANSPAM, CCPA).
-    placeholder: YES - I confirm that the leads have explicitly opted-in/ NO - Leads have not opted-in OR I am not sure
+    placeholder: YES / NO / I am not sure how do I check?
   validations:
     required: true       
 - type: dropdown
