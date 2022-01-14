@@ -34,12 +34,4 @@ body:
         - Removal of current page live in production
         - Tweak an existing page live in production
   validations:
-    required: true      
-- type: textarea
-  id: description
-  attributes:
-    label: If you selected `Tweak an existing page live in production` or `Removal of current page live in production`
-    description: Please provide a detailed description of your request. The more information, screen shots, and links you can provide, the sooner we can start development. 
-    placeholder: Description of your request.
-  validations: 
     required: true
