@@ -10,9 +10,9 @@ body:
     label: What region are you in?
     description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
     options:
-        - AMER
-        - APAC
-        - EMEA
+        - I am based in AMER
+        - I am based in APAC
+        - I am based in EMEA
   validations:
     required: true
 - type: textarea
