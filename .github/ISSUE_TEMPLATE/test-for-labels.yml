@@ -1,7 +1,7 @@
   name: Enhance
   description: Requesting a new capability or feature, or an improvement to an existing one
   title: "New Request: "
-  labels: 'Feature'
+  labels: ['Feature']
   body:
     - type: dropdown
       id: business-group
