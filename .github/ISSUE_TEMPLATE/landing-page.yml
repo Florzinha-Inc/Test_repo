@@ -1,8 +1,8 @@
 ---
-name: Single Email Request
-description: Single Email template
-title: "task: [Single Email] - "
-labels: ["Single-Email"]
+name: Landing page Request
+description: Addition or adjusts of SEO pages and Whitepapers or Removal of current pages live in production
+title: "task: [Landing page] - "
+labels: ["landing-page"]
 body: 
 - type: markdown
   attributes:
