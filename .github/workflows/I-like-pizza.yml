@@ -1,6 +1,14 @@
-like-pizza:
+name: Like pizza
+
+on:
+  issue_comment:
+    types:
+      - created
+
+jobs:
+  like-pizza:
     runs-on: ubuntu-latest
-    if: ${{ github.event.comment.body == 'New SEO page addition'}}
+    if: contains(github.event.comment.body, 'New SEO page addition')
     steps:
       - name: Like pizza
         uses: actions/github-script@v4
@@ -12,4 +20,5 @@ like-pizza:
               repo,
               comment_id: context.payload.comment.id,
               content: "+1",
-            }); 
+              body: 'Deployment failed! ❌',
+            });
