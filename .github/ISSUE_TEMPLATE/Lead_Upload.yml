@@ -32,7 +32,7 @@ body:
   id: Region
   attributes:
     label: What region are you in?
-    description: AMER, APAC, EMEA.
+    description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
     options:
         - I am based in AMER
         - I am based in APAC
