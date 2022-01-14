@@ -32,7 +32,7 @@ body:
   id: Region
   attributes:
     label: What region are these leads from?
-    description: AMER, APAC, EMEA, or GLOBAL.
+    description: AMER, APAC, EMEA.
     options:
         - AMER
         - APAC
