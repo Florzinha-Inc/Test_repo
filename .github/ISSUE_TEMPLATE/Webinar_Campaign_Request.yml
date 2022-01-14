@@ -19,9 +19,9 @@ body:
       label: What region are you in?
       description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
       options:
-        - AMER
-        - APAC
-        - EMEA
+        - I am based in AMER
+        - I am based in APAC
+        - I am based in EMEA
     validations:
       required: true
   - type: input
@@ -37,7 +37,7 @@ body:
     attributes:
       label: More information about campaign
       description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've one opened already.
-      placeholder: Please don't add any assets information here.
+      placeholder: Please do not add any assets information here.
       render: shell
     validations:
       required: true
