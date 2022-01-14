@@ -1,7 +1,7 @@
 name: Enhancemen
 description: Requesting a new capability or feature, or an improvement to an existing one
 title: "New Request: "
-labels: ["tracking issue", "needs triage"]
+labels: [tracking issue, needs triage]
 body:
   - type: dropdown
     id: business-group
