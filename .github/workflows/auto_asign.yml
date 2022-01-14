@@ -130,6 +130,6 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, we have all that we need for the triage step and will getback to you soon. 
+            @${{ github.event.issue.user.login }}, we have all that is needed for initial triage and will get back to you soon. 
             
             Thank you!          
