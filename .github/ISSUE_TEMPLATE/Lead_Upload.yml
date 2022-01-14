@@ -14,12 +14,12 @@ body:
         Please go ahead and fill out the basic information needed for a Lead Upload below then hit `Submit new issue` and I'll be back with next steps.
         
         One last tip before I let you go... Even though we will be linking you to examples of how to format the lead upload document like a pro here are the fields you must have (they can't be blank):
-        First Name
-        Last Name
-        Company Name
-        Email address
-        Last SFDC Campaign ID
-        Last SFDC campaign status
+        **First Name**
+        **Last Name**
+        **Company Name**
+        **Email address**
+        **Last SFDC Campaign ID**
+        **Last SFDC campaign status**
 - type: dropdown
   id: Region
   attributes:
