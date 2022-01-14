@@ -41,7 +41,7 @@ body:
   id: test-approval
   attributes:
     label: Who should receive the test email for final approval
-    description: Provide Test and Send date
+    description: Provide final assets approver's contact
     placeholder: brunochester@github.com
   validations:
     required: true    
