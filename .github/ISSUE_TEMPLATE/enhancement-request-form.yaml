@@ -1,0 +1,36 @@
+name: Enhancement or New Functionality Request
+description: Requesting a new capability or feature, or an improvement to an existing one
+title: "New Request: "
+labels: [help-wanted]
+body:
+  - type: textarea
+    id: business-group
+    attributes:
+      label: Who is the primary beneficiary of this work?
+      description: Please let us know your business group and how you believe this will beneficial.
+    validations: 
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: "If you select a High priority, please explain why in the Description field."
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Enhancement Request
+      description: Please provide a detailed description of your request. The more information, screen shots, and links you can provide, the sooner we can start development. 
+      placeholder: Description of your request.
+    validations: 
+      required: true
+  - type: textarea
+    attributes:
+      label: Use Cases and Acceptance Criteria
+    validations: 
+      required: true
