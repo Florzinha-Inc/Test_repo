@@ -5,8 +5,8 @@ title: "[Lead Upload]: "
 labels: ["Lead Upload"]
 body:
 - type: markdown
-    attributes:
-      value: |
+  attributes:
+    value: |
         ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
         
         Hey there, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions. Because of that you will see me around a lot! Don't be a stranger :wink:
