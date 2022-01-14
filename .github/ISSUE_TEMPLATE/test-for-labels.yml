@@ -1,121 +1,59 @@
-name: Enhancemen
-description: Requesting a new capability or feature, or an improvement to an existing one
-title: "New Request: "
-labels: [tracking issue, needs triage]
+name: 🐞 Bug
+description: File a bug/issue
+title: "[BUG] <title>"
+labels: [Bug, Needs Triage]
 body:
-  - type: dropdown
-    id: business-group
-    attributes:
-      label: Who is the primary beneficiary of this work?
-      description: Please select your business group from the dropdown below so we can better track our issues. 
-      options: 
-        - Sales - Tools and Efficiency 
-        - Sales - Operations
-        - Sales - Strategy and Analytics
-        - Sales - Corporate and Demand Marketing
-        - Sales - Deals Desk
-        - Sales - Go To Market
-        - Sales
-        - CS - Support
-        - CS - Professional Services
-        - CS - Channel Partners
-        - CS - Customer Outcomes
-        - CS - Analytics
-        - CS - Operations
-        - Customer Success
-        - Product Management
-        - Finance
-        - Gitcoin
-        - Data Engineering and Infrastructure
-        - Business Development
-        - Security
-        - Procurement
-        - Legal 
-        - Not Listed
-    validations: 
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
       required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority Level
-      description: "If you select a High priority, please explain why in the Description field."
-      options:
-        - "High"
-        - "Medium"
-        - "Low"
-    validations:
-      required: true
-  - type: textarea
-    id: description
-    attributes:
-      label: Description of Enhancement Request
-      description: Please provide a detailed description of your request. The more information, screen shots, and links you can provide, the sooner we can start development. 
-      placeholder: Description of your request.
-    validations: 
-      required: true
-  - type: textarea
-    attributes:
-      label: Use Cases and Acceptance Criteria
-      description: |
-        Example:
-        - Primary Actor: Sales Rep
-        - Use case description: I would like the system to calculate Expected Renewal ARR at Line Level and Roll it up to opportunity level as well 
-        - Exceptions: 
-          1. For Initial Orders and Amendments, Expected Renewal ARR will be zero, both at the line level and opportunity level 
-          2. In case of a Transfer, Total Expected Renewal ARR should include Transferred $amount 
-        - Acceptance Scenarios:
-          1. Expected Renewal ARR for a direct renewal of N quantity of GHE with no discount should calculate as $N  
-          2. Expected Renewal ARR for the renewal of N quantity of GHE & VS Enterprise Bundle - New that renews into GHE & VS Enterprise Bundle - Renewal should calculate as $N 
-          3. etc.
-      value: |
-        - Primary Actor: 
-        - Use case description:  
-        - Exceptions: 
-          1. 
-          2. 
-          3. 
-        - Acceptance Scenarios:
-          1. 
-          2. 
-          3. 
-    validations: 
-      required: true
-  - type: checkboxes
-    id: impacts
-    attributes:
-      label: Business Systems Impacts
-      description: Check the box of each group that will be affected. If not sure, leave it unchecked. 
-      options:
-        - label: Forecast (Aviso)
-        - label: Commissions (CalidusCloud)
-        - label: Reporting (DataWarehouse/Looker)
-        - label: Financial System (Zuora) <br>
-        - label: Marketing Automation (Eloqua)
-        - label: eSignature (Docusign) 
-        - label: Quote to Cash (CPQ)
-        - label: Customer Success / Experience (Gainsight)
-        - label: Professional Services (FinancialForce)
-        - label: None
-  - type: dropdown
-    id: assignee-status
-    attributes:
-      label: Assignee Status
-      description: "Work status.  For completion by assignee only."
-      options:
-        - "For Review"
-        - "Deep Dive"
-        - "Development"
-        - "Testing"
-        - "Ready for Production"
-    validations:
-      required: false
-  - type: dropdown
-    id: assignee-sub-status
-    attributes:
-      label: Assignee Sub-status
-      description: "Work sub-status.  For completion by assignee only."
-      options:
-        - "Not started"
-        - "In-progress"
-    validations:
-      required: false
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. In this environment...
+      2. With this config...
+      3. Run '...'
+      4. See error...
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
