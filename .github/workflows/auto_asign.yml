@@ -62,7 +62,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
             For all Webinars we usually follow the following structure:
             **1 -** Subscription Landing Page -> When ready please run `/Webinar landing page` to start building this asset
@@ -86,7 +86,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
             Single Emails are straight forward and I believe we already have all that is needed to work on it for you. 
             
@@ -108,7 +108,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
             If these are leads from a Webinar that we worked on together, we would ask you to go to that issue and follow the instructions there. 
             
@@ -130,7 +130,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            We take Bug Reports very seriously and I've already added our entire team to look at this.
+            @${{ github.event.issue.user.login }}, we take Bug Reports very seriously and I've already added our entire team to look at this.
             
             In case this is more like a question and not really a bug please open a AMA issue instead and we will be happy to help you out.
             
