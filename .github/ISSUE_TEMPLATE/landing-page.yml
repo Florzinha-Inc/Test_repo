@@ -1,0 +1,37 @@
+---
+name: Single Email Request
+description: Single Email template
+title: "task: [Single Email] - "
+labels: ["Single-Email"]
+body: 
+- type: markdown
+  attributes:
+    value: |
+        ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+        
+        Hey there, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions. Because of that you will see me around a lot! Don't be a stranger :wink:
+        
+        Please go ahead and fill out the basic information needed for a Landing Page below then hit `Submit new issue` and I'll be back with next steps.
+- type: dropdown
+  id: Region
+  attributes:
+    label: What region are you in?
+    description: We have primary contacts assigned per region. Please let us know your region for assigment purposes.
+    options:
+        - I am based in AMER
+        - I am based in APAC
+        - I am based in EMEA
+  validations:
+    required: true
+- type: dropdown
+  id: type
+  attributes:
+    label: What are you looking for?
+    description: Please select one of the options from the dropdown
+    options:
+        - New SEO page addition
+        - New Whitepaper page addition
+        - Removal of current page live in production
+        - Tweak an existing page live in production
+  validations:
+    required: true      
