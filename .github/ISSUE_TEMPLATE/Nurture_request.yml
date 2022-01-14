@@ -73,3 +73,13 @@ body:
       placeholder: ex. Users who opted-in for an enterprise acount in EMEA during Q3/2021
     validations:
       required: false
+  - type: dropdown
+    id: evergreen
+    attributes:
+      label: Is this an evergreen nurture?
+      description: 
+      options:
+        - I want this campaign to be continuously sent to people as they meet the entrance criteria/audience
+        - I want this campaign to be sent to the audience above just once
+    validations:
+      required: true   
