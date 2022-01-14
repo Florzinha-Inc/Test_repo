@@ -31,7 +31,7 @@ body:
 - type: dropdown
   id: Region
   attributes:
-    label: What region are these leads from?
+    label: What region are you in?
     description: AMER, APAC, EMEA.
     options:
         - I am based in AMER
