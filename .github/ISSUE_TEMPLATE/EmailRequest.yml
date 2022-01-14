@@ -1,7 +1,7 @@
 ---
 name: Single Email Request
 description: Single Email template
-title: "[Single Email]: "
+title: "task: [Single Email] - "
 labels: ["Single-Email"]
 body: 
 - type: markdown
@@ -37,6 +37,14 @@ body:
     placeholder: ex. Test 01/06/2022 Send 01/08/2022
   validations:
     required: true
+- type: input
+  id: test-approval
+  attributes:
+    label: Who should receive the test email for final approval
+    description: Provide Test and Send date
+    placeholder: brunochester@github.com
+  validations:
+    required: true    
 - type: input
   id: Approval
   attributes:
