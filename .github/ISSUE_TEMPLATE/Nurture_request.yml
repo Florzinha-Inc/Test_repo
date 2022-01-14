@@ -25,6 +25,14 @@ body:
     validations:
       required: true
   - type: input
+  id: test-approval
+  attributes:
+    label: Who should receive the test email for final approval
+    description: Provide final assets approver's contact
+    placeholder: brunochester@github.com
+  validations:
+    required: true    
+  - type: input
     id: Name
     attributes:
       label: Nurture name
