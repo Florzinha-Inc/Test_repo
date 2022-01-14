@@ -6,7 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for opening a Nurture Support ticket.   
+        ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+        
+        Hi @${{ github.event.issue.user.login }}, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions.
+        You will see me around a lot! Don't be a stranger :wink:   
   - type: dropdown
     id: Region
     attributes:
