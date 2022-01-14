@@ -135,7 +135,7 @@ jobs:
             Thank you!
   SEO-Page-comment:
     needs: test
-    if: github.event.comment.body == 'New SEO page addition'
+    if: ${{ github.event.comment.body == 'New SEO page addition' }}
     runs-on: ubuntu-latest
     permissions:
       issues: write
