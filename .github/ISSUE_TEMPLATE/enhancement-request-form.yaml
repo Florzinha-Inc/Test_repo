@@ -12,7 +12,7 @@ body:
         
         We love Enhancements ideas! Please go ahead and fill out the form below then hit `Submit new issue` and I'll be back with next steps.
         
-  - type: textarea
+  - type: input
     id: business-group
     attributes:
       label: Who is the primary beneficiary of this work?
