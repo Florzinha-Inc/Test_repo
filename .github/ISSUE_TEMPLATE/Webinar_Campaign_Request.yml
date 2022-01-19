@@ -34,8 +34,8 @@ body:
     id: info
     attributes:
       label: More information about campaign
-      description: Please add more information about the campaign. Feel free to link us to a IDM Master issue you've one opened already.
-      placeholder: "- [ ] Please add an item for each asset required"
+      description: Please add more information about the campaign.
+      placeholder: "Feel free to link us to a IDM Master issue you've one opened already."
     validations:
       required: true
   - type: input
@@ -66,9 +66,7 @@ body:
     id: task_list
     attributes:
       label: Webinar Task list
-      description: **Skip this part until the MOPs Bot gives you further directions**
-                   Please do not change the **_bold & italizized_** label area
-                   Possible values for `YOUR-REGION` are `AMER` or `APAC` or `EMEA`
+      description: **Skip this part until the MOPs Bot gives you further directions**.  Please do not change the **_bold & italizized_** label area.  Possible values for `YOUR-REGION` are `AMER` or `APAC` or `EMEA`
       options:
         - label: "**_Task: Webinar emails -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
           required: false
