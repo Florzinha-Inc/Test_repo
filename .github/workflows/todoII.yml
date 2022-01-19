@@ -1,6 +1,6 @@
 name: "Workflow"
-    on: [issues]
-    jobs:
+on: [issues]
+jobs:
       build:
         runs-on: "ubuntu-latest"
         steps:
