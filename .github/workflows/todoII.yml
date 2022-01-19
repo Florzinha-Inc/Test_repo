@@ -1,5 +1,5 @@
 name: "Workflow"
-on: [issues]
+on: issue_comment
 jobs:
       build:
         runs-on: "ubuntu-latest"
