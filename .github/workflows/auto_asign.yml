@@ -136,7 +136,7 @@ jobs:
   
   New-issue-needed:
     needs: test
-    if: github.event.label.name == 'Lead Upload'
+    if: github.event.label.name == 'needs-email'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -144,11 +144,13 @@ jobs:
       - name: Create team sync issue
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
-          assignees: "brunochester"
+          assignees: ${{ github.event.issue.assignee.login }}
           labels: "weekly sync, docs-team"
           title: "Team sync"
           body: |
             ### Agenda
+            
+            @${{ github.event.issue.user.login }}
 
             - [ ] Start the recording
             - [ ] Check-ins
