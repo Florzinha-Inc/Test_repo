@@ -66,7 +66,7 @@ body:
     id: task_list
     attributes:
       label: Webinar Task list - Skip this part until the MOPs Bot gives you further directions.
-      description: Only possible values for YOUR-REGION are AMER, EMEA, or APAC <example> Task Webinar emails - AMER - DevSecOps Summer 2022
+      description: Only possible values for YOUR-REGION are AMER, EMEA, or APAC. Example -> Task Webinar emails - AMER - DevSecOps Summer 2022
       options:
         - label: "**_Task: Webinar emails -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
           required: false
