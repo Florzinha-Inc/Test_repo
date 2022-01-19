@@ -10,9 +10,7 @@ body:
         
         Hey there, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions. Because of that you will see me around a lot! Don't be a stranger :wink:
         
-        Please go ahead and fill out the basic information needed for a Webinar campiagn below then hit `Submit new issue` and I'll be back with next steps.
-        
-        One last tip before I let you go. We will be using `/commands` to build the assets of this campaign and I will tell you more about it after you hit `Submit`.   
+        Please go ahead and fill out the basic information needed for a Webinar campiagn below then hit `Submit new issue` and I'll be back with next steps.  
   - type: dropdown
     id: Region
     attributes:
@@ -63,4 +61,16 @@ body:
       description: Provide final assets approver's contact
       placeholder: brunochester@github.com
     validations:
-      required: true    
+      required: true
+  - type: checkboxes
+    id: task_list
+    attributes:
+      label: Webinar Task list
+      description: Skip this part until the MOPs Bot gives you further directions
+      options:
+        - label: Task: Webinar emails - YOUR-REGION - YOUR-CUSTOM-TITLE
+          required: false
+        - label: Task: Webinar landing pages - YOUR-REGION - YOUR-CUSTOM-TITLE
+          required: false
+        - label: Task: Webinar lead upload - YOUR-REGION - YOUR-CUSTOM-TITLE
+          required: false  
