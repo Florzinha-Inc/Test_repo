@@ -136,7 +136,7 @@ jobs:
   
   New-issue-needed:
     needs: test
-    if: github.event.label.name == 'needs-email'
+    if: github.event.comment.body == 'needs-email'
     runs-on: ubuntu-latest
     permissions:
       issues: write
