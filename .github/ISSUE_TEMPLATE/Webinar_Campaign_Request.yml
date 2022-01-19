@@ -66,8 +66,7 @@ body:
     id: task_list
     attributes:
       label: Webinar Task list
-      description: **Skip this part until the MOPs Bot gives you further directions**.  Please do not change the **_bold & italizized_** label area.  Possible values for `YOUR-REGION` are `AMER` or `APAC` or `EMEA`
-      options:
+      description: Skip this part until the MOPs Bot gives you further directions.
         - label: "**_Task: Webinar emails -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
           required: false
         - label: "**_Task: Webinar landing pages -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
