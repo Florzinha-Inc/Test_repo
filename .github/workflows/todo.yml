@@ -1,6 +1,6 @@
 name: Create issues from todos
 
-on: [issues]
+on: issue_comment
 
 jobs:
   todos:
