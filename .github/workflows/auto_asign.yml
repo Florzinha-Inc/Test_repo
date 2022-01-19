@@ -1,22 +1,22 @@
 name: Auto Comment
 on: [issues]
 jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: wow-actions/auto-comment@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpenedReactions: 'hooray'
-          issuesOpenedComment: |
-            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
-            
-            👋 @{{ author }}, thank you for opening a new issue!
-            
-            Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
+ # run:
+  #  runs-on: ubuntu-latest
+   # steps:
+    #  - uses: wow-actions/auto-comment@v1
+     #   with:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       #   issuesOpenedReactions: 'hooray'
+        #  issuesOpenedComment: |
+         #   ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+          #  
+           # 👋 @{{ author }}, thank you for opening a new issue!
+            #
+            #Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
 
   test:
-    needs: run
+    # needs: run
     runs-on: ubuntu-latest
     steps:
       - uses: Naturalclar/issue-action@v2.0.2
