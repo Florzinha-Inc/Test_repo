@@ -136,7 +136,7 @@ jobs:
   
   Create-team-sync-issue:
     needs: test
-    if: github.event.issue.comment == 'TODO'
+    if: ${{ github.event.comment.body == 'Create issue:'}}
     runs-on: ubuntu-latest
     permissions:
       issues: write
