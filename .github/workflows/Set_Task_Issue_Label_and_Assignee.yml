@@ -1,0 +1,14 @@
+name: "Set_Task_Issue_Label_and_Assignee"
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "title"
+          parameters: '[ {"keywords": ["Task: Webinar email(s): AMER"], "labels": ["AMER", "MOPS", "grey"], "assignees": ["brunochester"]}]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
