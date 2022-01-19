@@ -23,7 +23,7 @@ jobs:
         with:
           title-or-body: "both"
           parameters: '[ {"keywords": ["I am based in AMER", "Webinar emails - AMER"], "labels": ["AMER", "grey", "Webinar"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.SECRET_NAME }}"
   
   nurture-comment:
     needs: test
