@@ -129,34 +129,24 @@ jobs:
             
             Thank you!      
   
-  New-issue-needed:
+  Webinar:
     needs: test
-    if: github.event.label.name == 'needs-email'
+    if: github.event.label.name == 'Webinar'
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
-      - name: Create team sync issue
-        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
         with:
-          assignees: ${{ github.event.issue.assignee.login }}
-          labels: "weekly sync, docs-team"
-          title: "Team sync"
+          issue-number: ${{ github.event.issue.number }}
           body: |
-            ### Agenda
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}
-
-            - [ ] Start the recording
-            - [ ] Check-ins
-            - [ ] Discussion points
-            - [ ] Post the recording
-                    
-            ### Discussion Points
-            Add things to discuss below
-
-            - [Work this week](https://github.com/orgs/github/projects/3)
-          pinned: false
-          close-previous: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            
+            
+            **1 -** Please `Edit` the comment above by going back to the **Webinar tasks** and adding your region & a custom title to each task. Once you done please click `Update`
+            
+            **2 -** Now that your tasks have `Region` and `Custom title` please go ahead and convert them to an issue by hovering over each task and clicking in the upper-right corner of the task.
+            ![ Alt text](name-of-gif-file. gif)
