@@ -145,9 +145,11 @@ jobs:
             
             @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
             
+            We will be using the `Webinar task list` to automatically open issues based off of this Master Issue. For that to work I'll need your help with two simple steps:
             
             **1 -** Please `Edit` the **Webinar task list** in the opening comment above by replacing `YOUR-REGION` with the region you are based in & `YOUR-CUSTOM-TITLE` with a title of your preference.
+            
                 
-            **2 -** Now that your tasks have `Region` and `Custom title` please go ahead and convert them to an issue by hovering over each task and clicking in the upper-right corner of the task.
+            **2 -** Once you are done adding `Region` and `Custom title` to your tasks go ahead and convert them to an issue by hovering over each task and clicking in the upper-right corner of the task.
             
             ![Recording 2022-01-19 at 16 48 35](https://user-images.githubusercontent.com/35078348/150220570-6a120b92-5080-4fbd-8c93-3ff26dc87cc3.gif)
