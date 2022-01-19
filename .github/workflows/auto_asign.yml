@@ -11,9 +11,7 @@ jobs:
           issuesOpenedComment: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            👋 @{{ author }}, this is the MOPs bot. Thank you for raising an issue!
-            I'll go ahead and assign it to one of our MOPs team members and they will triage this issue and get back to you as soon as possible.
-            But first let's keep working together to ensure that you have given us as much context as possible prior to their Triage.
+            👋 @{{ author }}, thank you for opening a new issue!
             
             Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
 
@@ -24,7 +22,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER", "Webinar emails - AMER"], "labels": ["AMER", "grey"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["I am based in AMER", "Webinar emails - AMER"], "labels": ["AMER", "grey", "Webinar"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
   
   nurture-comment:
