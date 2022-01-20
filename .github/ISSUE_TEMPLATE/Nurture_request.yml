@@ -44,7 +44,7 @@ body:
     id: info
     attributes:
       label: More information about this nurture
-      description: Feel free to link us to a IDM Master issue you've one opened already.
+      description: Feel free to link us to an IDM Master issue if you've one opened already.
       placeholder: Please do not add any asset information here.
       render: shell
     validations:
