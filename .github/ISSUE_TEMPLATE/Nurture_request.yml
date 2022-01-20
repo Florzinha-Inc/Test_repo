@@ -96,5 +96,5 @@ body:
       label: Nurture Task list - Skip this part until the MOPs Bot gives you further directions.
       description: Only possible values for YOUR-REGION are AMER, EMEA, or APAC. Example -> **_Task Nurture emails -_** AMER - DevSecOps Summer 2022
       options:
-        - label: "**_Task Nurture emails -_**" ${{ github.event.issue.title }} "- email"
+        - label: ${{ github.event.issue.title }}
           required: false
