@@ -37,7 +37,7 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            @${{ github.event.issue.user.login }}, @${{ github.event.issue.title }} we will be using the `Nurture task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
+            @${{ github.event.issue.user.login }}, we will be using the `Nurture task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
             
             For that to work I'll need your help with two simple steps:
             
@@ -47,6 +47,10 @@ jobs:
             **2 -** Once you are done adding `Region` and `Custom title` to your tasks go ahead and convert them to an issue by hovering over each task and clicking in the upper-right corner of the task.
             
             That is all! I will be reaching out to you in each task issue... See you later :partying_face:
+            
+            - [ ] @${{ github.event.issue.title }} - email
+            - [ ] @${{ github.event.issue.title }} - landing page
+            - [ ] @${{ github.event.issue.title }} - lead upload
             
             ![Recording 2022-01-20 at 13 10 01](https://user-images.githubusercontent.com/35078348/150397099-0f808467-1557-41f5-aca3-1eaff4eabbdf.gif)
 
