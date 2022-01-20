@@ -60,12 +60,9 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            @${{ github.event.issue.user.login }}, when ready please run `/Email Builder` as many times as needed to build all necessary email assets
             
-            
-            **1 -** Emails (invite, follow-up, thank-you) -> When ready please run `/Email Builder` as many times as needed to build all necessary emails
-            
-            **Remember:** One at a time all `/Email Builder` need to be typed on a comment box like the one below :point_down:
+            ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
           
   single-email-comment:
     needs: test
