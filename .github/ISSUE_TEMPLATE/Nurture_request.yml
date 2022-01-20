@@ -46,7 +46,6 @@ body:
       label: More information about this nurture
       description: Feel free to link us to an IDM Master issue if you've one opened already.
       placeholder: Please do not add any asset information here.
-      render: shell
     validations:
       required: true
   - type: input
