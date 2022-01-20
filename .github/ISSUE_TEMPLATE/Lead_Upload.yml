@@ -1,7 +1,7 @@
 ---
 name: Lead Upload Request
 description: MOPS Lead Upload template
-title: "task: [Lead Upload] - "
+title: "Task: [Lead Upload] - "
 labels: ["Lead Upload"]
 body:
 - type: markdown
