@@ -42,6 +42,8 @@ jobs:
             @${{ github.event.issue.user.login }}, thank you for opening this Nurture issue.
             
             Next, we encourage you to run `/Email Builder` as a comment as many times as needed to build all necessary email assets for this nurture.
+           
+            ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
             
             If you need inspiration please [check this Markdown tip + template issue](https://github.com/GitHub-MOPs/Test_repo/issues/165) where you can grab what is there and add your own spin to it :wink:
             
