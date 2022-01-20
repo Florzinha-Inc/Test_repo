@@ -188,4 +188,4 @@ jobs:
             
             @${{ github.event.issue.user.login }}, please run `/Lead Upload` as a comment to share all that good stuff with us.
             
-            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif)
+            ![Recording 2022-01-20 at 03 56 19](https://user-images.githubusercontent.com/35078348/150306319-82a4fe09-ab27-42b2-a41b-40705fb1440c.gif)
