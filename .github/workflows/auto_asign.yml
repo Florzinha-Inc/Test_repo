@@ -37,22 +37,17 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            @${{ github.event.issue.user.login }}, we will be using the `Nurture task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            For that to work I'll need your help with two simple steps:
+            @${{ github.event.issue.user.login }}, thank you for opening this Nurture issue.
             
-            **1 -** Please `Edit` the **Nurture task list** in the opening comment above by replacing `YOUR-REGION` with the region you are based in & `YOUR-CUSTOM-TITLE` with a title of your preference.
+            Next, we encourage you to run `/Email Builder` as a comment as many times as needed to build all necessary email assets for this nurture.
             
-                
-            **2 -** Once you are done adding `Region` and `Custom title` to your tasks go ahead and convert them to an issue by hovering over each task and clicking in the upper-right corner of the task.
+            If you need inspiration please [check this Markdown tip + template issue](https://github.com/GitHub-MOPs/Test_repo/issues/165) where you can grab what is there and add your own spin to it :wink:
             
-            That is all! I will be reaching out to you in each task issue... See you later :partying_face:
-            
-            - [ ] @${{ github.event.issue.title }} - email
-            - [ ] @${{ github.event.issue.title }} - landing page
-            - [ ] @${{ github.event.issue.title }} - lead upload
-            
-            ![Recording 2022-01-20 at 13 10 01](https://user-images.githubusercontent.com/35078348/150397099-0f808467-1557-41f5-aca3-1eaff4eabbdf.gif)
+            In case you want to use a [Google doc](https://drive.google.com/drive/folders/1F4UMdV_K3sopEn7vnGdxAu4nUaiEODrs) to build your asset template we are super cool with it as well.
+
+            Thank you!
 
   Webinar-email:
     needs: test
@@ -132,7 +127,7 @@ jobs:
             
             @${{ github.event.issue.user.login }}, we have all that is needed for initial triage and will get back to you soon. 
             
-            Thank you!      
+            Thank you!       
   
   Webinar:
     needs: test
