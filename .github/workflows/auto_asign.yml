@@ -60,7 +60,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, when ready please run `/Email Builder` as many times as needed to build all necessary email assets
+            @${{ github.event.issue.user.login }}, when ready please run `/Email Builder` as comment as many times as needed to build all necessary email assets
             
             ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
           
