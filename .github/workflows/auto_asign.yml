@@ -48,7 +48,7 @@ jobs:
             
             That is all! I will be reaching out to you in each task issue... See you later :partying_face:
             
-            ![Recording 2022-01-20 at 13 10 01](https://user-images.githubusercontent.com/35078348/150397099-0f808467-1557-41f5-aca3-1eaff4eabbdf.gif).
+            ![Recording 2022-01-20 at 13 10 01](https://user-images.githubusercontent.com/35078348/150397099-0f808467-1557-41f5-aca3-1eaff4eabbdf.gif)
 
   Webinar-email:
     needs: test
