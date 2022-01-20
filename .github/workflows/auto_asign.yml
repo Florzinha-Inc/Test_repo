@@ -22,7 +22,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails - AMER"], "labels": ["AMER", "grey", "Webinar-email"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails - AMER"], "labels": ["AMER", "grey", "Webinar-emails"], "assignees": ["BrunoChester"]}, "assignees": ["BrunoChester"]}, {"keywords": ["Task: Webinar landing pages - AMER"], "labels": ["AMER", "grey", "Webinar-pages"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey"], "assignees": ["mike421453"]}, {"keywords": ["Ask me anything"], "labels": ["Triage", "Question"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.SECRET_NAME }}"
   
   nurture-comment:
@@ -46,9 +46,9 @@ jobs:
             Please go ahead and type `/create-email` on the comment box below so that you can start adding the assets to this issue.
             Feel free to use the `/create-email` as many times as needed until you have added all email information needed.
 
-  Webinar-comment:
+  Webinar-email:
     needs: test
-    if: github.event.label.name == 'Webinar-email'
+    if: github.event.label.name == 'Webinar-emails'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -152,3 +152,21 @@ jobs:
             That is all! I will be reaching out to you in each task issue... See you later :partying_face:
             
             ![Recording 2022-01-19 at 16 48 35](https://user-images.githubusercontent.com/35078348/150220570-6a120b92-5080-4fbd-8c93-3ff26dc87cc3.gif)
+  
+  Webinar-page:
+    needs: test
+    if: github.event.label.name == 'Webinar-pages'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @${{ github.event.issue.user.login }}, when ready please run `/Webinar landing page` or `Webinar thank you page` as comment as many times as needed to build all necessary page assets
+            
+            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif) 
