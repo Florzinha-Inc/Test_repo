@@ -33,5 +33,13 @@ body:
         - New Whitepaper page addition
         - Removal of current page live in production
         - Tweak an existing page live in production
+- type: textarea
+    id: info
+    attributes:
+      label: More information about this effort
+      description: Feel free to link us to any example you have.
+      placeholder: The more context you give us the better.
+    validations:
+      required: true        
   validations:
     required: true
