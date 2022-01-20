@@ -1,0 +1,45 @@
+name: Enhancement or New Functionality Request
+description: Requesting a new capability or feature, or an improvement to an existing one
+title: "Task: [Landing Page]"
+labels: [Landing-page]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+        
+        Hey there, I am the MOPs bot! In this repo we use ChatOps to streamline our communication and run development and operations functions. Because of that you will see me around a lot! Don't be a stranger :wink:
+        
+        We love Enhancements ideas! Please go ahead and fill out the form below then hit `Submit new issue` and I'll be back with next steps.
+        
+  - type: input
+    id: business-group
+    attributes:
+      label: Who is the primary beneficiary of this work?
+      description: Please let us know your business group or team.
+    validations: 
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: "Please explain why you selected this priority level in the Description field."
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Enhancement Request
+      description: Please provide a detailed description of your request. The more information, screen shots, and links you can provide, the sooner we can start development. 
+      placeholder: Description of your request.
+    validations: 
+      required: true
+  - type: textarea
+    attributes:
+      label: Use Cases and Acceptance Criteria
+    validations: 
+      required: true
