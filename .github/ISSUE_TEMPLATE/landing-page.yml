@@ -2,7 +2,7 @@
 name: Landing page Request
 description: Addition or adjusts of SEO pages and Whitepapers or Removal of current pages live in production
 title: "Task: [Landing page] - "
-labels: ["landing-page"]
+labels: ["Landing-page"]
 body: 
 - type: markdown
   attributes:
