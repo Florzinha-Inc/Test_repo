@@ -37,7 +37,7 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            @${{ github.event.issue.user.login }}, we will be using the `Nurture task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
+            @${{ github.event.issue.user.login }}, @${{ github.event.issue.title }} we will be using the `Nurture task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
             
             For that to work I'll need your help with two simple steps:
             
