@@ -60,7 +60,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, when ready please run `/Email Builder` as comment as many times as needed to build all necessary email assets
+            @${{ github.event.issue.user.login }}, please run `/Email Builder` as a comment as many times as needed to build all necessary email assets
             
             ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
           
@@ -140,9 +140,9 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue. Now let's continue with next steps :rocket:
+            @${{ github.event.issue.user.login }}, we will be using the `Webinar task list` to automatically open Task issues based off of this Master Batch Issue. :rocket:
             
-            We will be using the `Webinar task list` to automatically open Task issues based off of this Master Batch Issue. For that to work I'll need your help with two simple steps:
+            For that to work I'll need your help with two simple steps:
             
             **1 -** Please `Edit` the **Webinar task list** in the opening comment above by replacing `YOUR-REGION` with the region you are based in & `YOUR-CUSTOM-TITLE` with a title of your preference.
             
@@ -167,6 +167,25 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, when ready please run `/Webinar landing page` or `Webinar thank you page` as comment as many times as needed to build all necessary page assets
+            @${{ github.event.issue.user.login }}, please run `/Webinar landing page` or `/Webinar thank you page` as a comment as many times as needed to build all necessary page assets
             
-            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif) 
+            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif)
+  
+  
+  Webinar-lead-upload:
+    needs: test
+    if: github.event.label.name == 'Webinar-lead-upload'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @${{ github.event.issue.user.login }}, please run `/Lead Upload` as a comment to share all that good stuff with us.
+            
+            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif)
