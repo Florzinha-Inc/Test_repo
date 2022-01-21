@@ -68,7 +68,7 @@ body:
       label: Webinar Task list - Skip this part until the MOPs Bot gives you further directions.
       description: Only possible values for YOUR-REGION are AMER, EMEA, or APAC. Example -> **_Task Webinar emails -_** AMER - DevSecOps Summer 2022
       options:
-        - label: "**_Task: Webinar emails -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
+        - label: - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
           required: false
         - label: "**_Task: Webinar landing pages -_** YOUR-REGION - YOUR-CUSTOM-TITLE"
           required: false
