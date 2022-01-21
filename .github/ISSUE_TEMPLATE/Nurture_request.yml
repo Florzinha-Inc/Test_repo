@@ -90,8 +90,11 @@ body:
         - I want this campaign to be sent to the audience above just once
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     attributes:
+      label: Task list and sub issues
       value: |
-         - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
-         - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
+        - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
+        - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
+    validations: 
+      required: false
