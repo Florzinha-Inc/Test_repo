@@ -1,0 +1,42 @@
+name: System Access Request
+description: Requesting access to a system that MOPs oversees
+title: "Task: [System Access Request]"
+labels: [system-access]
+body:
+  
+ - type: input
+    id: Handle
+    attributes:
+      label: GitHub Label
+      description: What is your Github Handle?
+      placeholder: @myhandle
+    validations:
+      required: true
+      
+  - type: input
+    id: Manager_Handle
+    attributes:
+      label: Manager GitHub Label
+      description: What is your Manager's GitHub Handle?
+      placeholder: @mymanagerhandle
+    validations:
+      required: true    
+      
+  - type: textarea
+    id: user-story
+    attributes:
+      label: Business REason
+      placeholder: Tell us the use cases that justify your access
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: system-list
+    attributes:
+      label: Systems
+      options:
+        - Eloqua
+        - SendGrid
+        - MailChimp
+        - Tray.io
+        - Clearbit
