@@ -3,7 +3,6 @@ on: [issues]
 jobs:
  
   nurture-comment:
-    # needs: test
     if: github.event.label.name == 'Nurture'
     runs-on: ubuntu-latest
     permissions:
@@ -18,9 +17,9 @@ jobs:
             
             👋 @${{ github.event.issue.user.login }}, thank you for opening this Master issue for your new Nurture. I see that you've given us most of the required information for a successful Nurture. 
             
-            While I finish the labeling and assigment please go ahead and convert the task in the *Task list for sub-issues* above ☝️ to an issue. 
+            While I finish the labeling and assigment please go ahead and convert the `Task: Nurture Email` in the **Task list for sub-issues** above ☝️ to an issue. 
             
-            I will reach back to you in the Task issue where We will be working together on assets creation. See you!
+            I will reach back to you in the Task issue where we will be working together on assets creation. See you!
   
   Nurture-label:
     needs: nurture-comment
