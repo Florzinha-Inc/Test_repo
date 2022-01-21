@@ -55,16 +55,3 @@ jobs:
             We totally get it if you want to use a Google Doc to create your email template. If that is the case just make a comment saying `MOPs Bot I want the Google Doc link` and I will link you to it right away.
        
             # ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)        
-  
-  Google-Doc-Link:
-    if: ${{ github.event.comment.body == 'MOPs Bot I want the Google Doc link'}}
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Add comment
-        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
-        with:
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            It worked
