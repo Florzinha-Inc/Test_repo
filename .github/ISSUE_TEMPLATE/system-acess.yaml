@@ -2,7 +2,19 @@ name: System Access Request
 description: Requesting access to a system that MOPs oversees
 title: "Task: [System Access Request]"
 labels: [system-access]
-body:        
+body:   
+
+  - type: dropdown
+    id: system-list
+    attributes:
+      label: Systems
+      options:
+        - Eloqua
+        - SendGrid
+        - MailChimp
+        - Tray.io
+        - Clearbit
+        
   - type: input
     id: Handle
     attributes:
@@ -28,14 +40,3 @@ body:
       placeholder: Tell us the use cases that justify your access
     validations:
       required: true
-      
-  - type: dropdown
-    id: system-list
-    attributes:
-      label: Systems
-      options:
-        - Eloqua
-        - SendGrid
-        - MailChimp
-        - Tray.io
-        - Clearbit
