@@ -102,10 +102,9 @@ body:
           <img width="600" alt="Screen Shot 2022-01-21 at 8 21 34 AM" src="https://user-images.githubusercontent.com/35078348/150534033-ce47785c-29b6-4c1b-9ccc-575eb067db72.png">
         
       value: |
-        - Because this task requires further tracking or discussion we will ask you to convert the task to an issue after hitting `Submit new issue`.
         - Intructions to convert the task to an issue:
           1. Don't change the copy
-          2. Hover over the task and click <img width="16" alt="Screen Shot 2022-01-21 at 8 01 58 AM" src="https://user-images.githubusercontent.com/35078348/150531449-aa95fb7b-d165-4f54-a3c2-9b3bcdaa51f0.png"> in the upper-right corner of the task.
+          2. Hover over the task below 👇 and click <img width="16" alt="Screen Shot 2022-01-21 at 8 01 58 AM" src="https://user-images.githubusercontent.com/35078348/150531449-aa95fb7b-d165-4f54-a3c2-9b3bcdaa51f0.png"> in the upper-right corner of the task.
         - Example:
           <img width="600" alt="Screen Shot 2022-01-21 at 8 21 34 AM" src="https://user-images.githubusercontent.com/35078348/150534033-ce47785c-29b6-4c1b-9ccc-575eb067db72.png">
           
