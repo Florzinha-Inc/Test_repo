@@ -2,8 +2,7 @@ name: System Access Request
 description: Requesting access to a system that MOPs oversees
 title: "Task: [System Access Request]"
 labels: [system-access]
-body:
-  
+body: 
  - type: input
    id: Handle
    attributes:
