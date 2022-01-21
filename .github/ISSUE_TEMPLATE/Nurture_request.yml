@@ -92,7 +92,6 @@ body:
       required: true
   - type: markdown
     attributes:
-      label: Task sub-issues
       value: |
          - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
          - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
