@@ -1,0 +1,26 @@
+name: thank-you-page-builder-slash-command-helper
+
+on:
+  issue_comment:
+    types:
+      - created
+
+jobs:
+  thank-you-page-builder-slash-command-helper:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.comment.body == '/Webinar thank you page'}}
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @${{ github.event.issue.user.login }}, it seems like you are trying to copy and paste the `/Webinar thank you page` slash command. 
+            
+            **Try typing it instead** :rocket:
+            
+            ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif)
