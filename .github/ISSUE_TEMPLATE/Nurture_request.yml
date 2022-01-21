@@ -94,7 +94,6 @@ body:
     attributes:
       label: Task list for sub-issues
       description: |
-        - Because this task requires further tracking or discussion we will ask you to convert the task to an issue after hitting `Submit new issue`.
         - Please go ahead and Submit this issue then follow the instructions provided by the MOPs Bot.
         
       value: |
