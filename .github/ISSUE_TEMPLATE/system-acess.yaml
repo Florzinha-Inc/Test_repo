@@ -39,7 +39,7 @@ body:
       label: Business Reason
       placeholder: Tell us the use cases that justify your access
     validations:
-      required: true
+      required: false
       
   - type: textarea
     id: manager_approval
