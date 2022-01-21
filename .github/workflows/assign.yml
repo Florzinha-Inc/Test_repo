@@ -8,7 +8,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Task: [System Access Request]"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Webinar"], "labels": ["Webinar", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Nurture"], "labels": ["Nurture", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Lead Upload"], "labels": ["Lead Upload", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Landing page"], "labels": ["landing-page", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Single Email"], "labels": ["Single-Email", "grey", "MOPS"], "assignees": [""]}]'
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["System Access Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Webinar"], "labels": ["Webinar", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Nurture"], "labels": ["Nurture", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Lead Upload"], "labels": ["Lead Upload", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Landing page"], "labels": ["landing-page", "grey", "MOPS"], "assignees": [""]}, {"keywords": ["Single Email"], "labels": ["Single-Email", "grey", "MOPS"], "assignees": [""]}]'
           github-token: "${{ secrets.SECRET_NAME }}"
 
   nurture-comment:
@@ -50,7 +50,7 @@ jobs:
 
             Single Emails are straight forward and I believe we already have all that is needed to work on it for you.
 
-            In case of any additional questions @${{ github.event.issue.assignee }} will get in touch.
+            In case of any additional questions @${{ github.event.issue.user.assignee }} will get in touch.
 
             Thank you!
 
@@ -70,7 +70,7 @@ jobs:
 
             👋 @${{ github.event.issue.user.login }}!
 
-            We will pick it up from here :smile:
+            Thank you for sharing these leads with us. We will pick it up from here :smile:
 
             Thank you!
 
@@ -88,7 +88,7 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
 
-            @${{ github.event.issue.user.login }}, we have all that is needed for initial triage and @${{ github.event.issue.assignee }} will get back to you soon.
+            @${{ github.event.issue.user.login }}, we have all that is needed for initial triage and @${{ github.event.issue.user.assignee }} will get back to you soon.
 
             Thank you!
 
@@ -131,7 +131,7 @@ jobs:
 
             @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue.
 
-            Next @${{ github.event.issue.assignee }}  will get in touch with next steps :rocket:
+            Next @${{ github.event.issue.user.assignee }}  will get in touch with next steps :rocket:
 
             Thank you!
 
@@ -151,6 +151,6 @@ jobs:
 
             @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue.
 
-            Next @${{ github.event.issue.assignee }}  will get in touch with next steps :rocket:
+            Next @${{ github.event.issue.user.assignee }}  will get in touch with next steps :rocket:
 
             Thank you!
