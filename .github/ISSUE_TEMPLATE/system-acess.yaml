@@ -9,7 +9,7 @@ body:
    attributes:
      label: GitHub Label
      description: What is your Github Handle?
-     placeholder: @myhandle
+     placeholder: "@myhandle"
    validations:
      required: true
       
@@ -18,7 +18,7 @@ body:
     attributes:
       label: Manager GitHub Label
       description: What is your Manager's GitHub Handle?
-      placeholder: @mymanagerhandle
+      placeholder: "@mymanagerhandle"
     validations:
       required: true    
       
