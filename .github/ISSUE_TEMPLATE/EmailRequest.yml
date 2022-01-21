@@ -2,7 +2,7 @@
 name: Single Email Request
 description: Single Email template
 title: "Task: [Single Email] - "
-labels: ["Single-Email"]
+labels: [Single-Email]
 body: 
 - type: markdown
   attributes:
