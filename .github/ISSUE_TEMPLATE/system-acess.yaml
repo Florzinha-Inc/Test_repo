@@ -40,3 +40,12 @@ body:
       placeholder: Tell us the use cases that justify your access
     validations:
       required: true
+      
+  - type: textarea
+    id: manager_approval
+    attributes:
+      label: For Your Manager to fill out
+      description: Add comment to issue with `Approved` below.
+      placeholder: This request from @employee_handle is approved
+    validations:
+      required: true    
