@@ -15,11 +15,13 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            👋 @${{ github.event.issue.user.login }}, thank you for opening this Master issue for your new Nurture. I see that you've given us most of the required information for a successful one ✨ . 
+            👋  @${{ github.event.issue.user.login }}! Let's get you focused on asset creation!
             
-            While I finish the labeling and assigment please go ahead and convert the `Task: Nurture Email` in the **Task list for sub-issues** above ☝️ to an issue. 
+            - [Here](https://github.com/GitHub-MOPs/Test_repo/issues/165) is a collection of templates that might be helpful for you and speed-up your asset creation process.
             
-            I will reach back to you in the Task issue where we will be working together on assets creation. See you!
+            - Feeling ready? Please go ahead and type `/Email Builder` as a comment below to start :rocket:
+            
+            We totally get it if you want to use a Google Doc to create your email template. If that is the case just make a comment saying `MOPs Bot I want the Google Doc link` and I will link you to it right away.
   
   Nurture-label:
     needs: nurture-comment
