@@ -151,6 +151,6 @@ jobs:
 
             @${{ github.event.issue.user.login }}, I've successfully labelled and assigned the issue.
 
-            Next @${{ github.event.issue.user.assignee }}  will get in touch with next steps :rocket:
+            Next @${{ github.event.issue.assignee.login }}  will get in touch with next steps :rocket:
 
             Thank you!
