@@ -63,7 +63,7 @@ body:
       description: Please let us know what the exit criteria are for this nurture
       placeholder: ex. user openned and clicked on an email asset or user submitted a contact us form
     validations:
-      required: false
+      required: true
   - type: textarea
     id: frequency
     attributes:
@@ -71,7 +71,7 @@ body:
       description: Please let us know in what frequency you would like the emails to be sent
       placeholder: ex. start on xx/xx/xxxx and send following emails weekly
     validations:
-      required: false
+      required: true
   - type: textarea
     id: audience
     attributes:
@@ -79,7 +79,7 @@ body:
       description: Please let us know the audience you are targeting
       placeholder: ex. Users who opted-in for an enterprise acount in EMEA during Q3/2021
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: evergreen
     attributes:
