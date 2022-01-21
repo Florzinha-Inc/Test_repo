@@ -5,13 +5,13 @@ labels: [system-access]
 body:
   
  - type: input
-    id: Handle
-    attributes:
-      label: GitHub Label
-      description: What is your Github Handle?
-      placeholder: @myhandle
-    validations:
-      required: true
+   id: Handle
+   attributes:
+     label: GitHub Label
+     description: What is your Github Handle?
+     placeholder: @myhandle
+   validations:
+     required: true
       
   - type: input
     id: Manager_Handle
