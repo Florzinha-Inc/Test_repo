@@ -50,7 +50,7 @@ jobs:
 
             Single Emails are straight forward and I believe we already have all that is needed to work on it for you.
 
-            In case of any additional questions @${{ github.event.issue.user.assignee }} will get in touch.
+            In case of any additional questions our team will get in touch.
 
             Thank you!
 
