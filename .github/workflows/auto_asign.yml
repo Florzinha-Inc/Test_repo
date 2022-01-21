@@ -41,7 +41,7 @@ jobs:
             
             @${{ github.event.issue.user.login }}, thank you for opening this Nurture issue.
             
-            - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails&title=Task+:+Nurture+Email)
+            - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
 
   Webinar-email:
     needs: test
