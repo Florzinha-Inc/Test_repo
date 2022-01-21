@@ -19,7 +19,8 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, it seems like you are trying to copy and paste the `/Email Builder` slash command. Unfortunately that won't work.
+            @${{ github.event.issue.user.login }}, it seems like you are trying to copy and paste the `/Email Builder` slash command. 
+
+            **Try typing it instead** :rocket:
             
-            Try typing it instead :rocket:
             ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
