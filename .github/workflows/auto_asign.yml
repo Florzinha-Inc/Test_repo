@@ -15,15 +15,15 @@ jobs:
             #
             #Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
 
-  # test:
-    # needs: run
-    # runs-on: ubuntu-latest
-    # steps:
-      # - uses: Naturalclar/issue-action@v2.0.2
-        # with:
-          # title-or-body: "both"
-          # parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
-          # github-token: "${{ secrets.SECRET_NAME }}"
+  test:
+    needs: run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "both"
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
+          github-token: "${{ secrets.SECRET_NAME }}"
   
   nurture-comment:
     # needs: test
