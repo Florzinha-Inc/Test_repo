@@ -89,12 +89,4 @@ body:
         - I want this campaign to be continuously sent to people as they meet the entrance criteria/audience
         - I want this campaign to be sent to the audience above just once
     validations:
-      required: true   
-  - type: checkboxes
-    id: task_list
-    attributes:
-      label: Nurture Task list - Skip this part until the MOPs Bot gives you further directions.
-      description: Only possible values for YOUR-REGION are AMER, EMEA, or APAC. Example -> **_Task Nurture emails -_** AMER - DevSecOps Summer 2022
-      options:
-        - label: ${{ github.event.issue.title }}
-          required: false
+      required: true
