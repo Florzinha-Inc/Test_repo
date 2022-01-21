@@ -41,15 +41,7 @@ jobs:
             
             @${{ github.event.issue.user.login }}, thank you for opening this Nurture issue.
             
-            Next, we encourage you to run `/Email Builder` as a comment as many times as needed to build all necessary email assets for this nurture.
-           
-            ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
-            
-            If you need inspiration please [check this Markdown tip + template issue](https://github.com/GitHub-MOPs/Test_repo/issues/165) where you can grab what is there and add your own spin to it :wink:
-            
-            In case you want to use a [Google doc](https://drive.google.com/drive/folders/1F4UMdV_K3sopEn7vnGdxAu4nUaiEODrs) to build your asset template we are super cool with it as well.
-
-            Thank you!
+            - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails&title=Task+:+Nurture+Email)
 
   Webinar-email:
     needs: test
