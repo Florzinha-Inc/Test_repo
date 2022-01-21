@@ -94,6 +94,6 @@ body:
     attributes:
       label: Optional copy doc
       description: |
-        - Provide a link to your copy doc if you have one, otherwise the MOPs Bot will give you further instructions.
+        - Provide a link to your copy doc if you have one, otherwise, the MOPs Bot will give you further instructions.
     validations: 
       required: false
