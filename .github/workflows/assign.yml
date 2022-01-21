@@ -8,7 +8,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[{"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Task: [System Access Request]"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
+          parameters: '[{"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Task: [System Access Request]"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}, {"keywords": ["Task: [Landing page]"], "labels": ["landing-page", "grey", "MOPS"]}]'
           github-token: "${{ secrets.SECRET_NAME }}"
 
   nurture-comment:
