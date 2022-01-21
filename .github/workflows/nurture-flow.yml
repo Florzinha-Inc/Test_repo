@@ -15,13 +15,13 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            👋  @${{ github.event.issue.user.login }}! Let's get you focused on asset creation!
+            👋  @${{ github.event.issue.user.login }}! If you've given us the copy doc please disregard this message, otherwise, let's get you focused on asset creation!
             
-            - [Here](https://github.com/GitHub-MOPs/Test_repo/issues/165) is a collection of templates that might be helpful for you and speed-up your asset creation process.
+            - [Here](#https://github.com/GitHub-MOPs/Test_repo/issues/165) is a collection of templates that might be helpful for you and speed-up your asset creation process.
             
             - Feeling ready? Please go ahead and type `/Email Builder` as a comment below to start :rocket:
             
-            We totally get it if you want to use a Google Doc to create your email template. If that is the case just make a comment saying `MOPs Bot I want the Google Doc link` and I will link you to it right away.
+           
   
   Nurture-label:
     needs: nurture-comment
