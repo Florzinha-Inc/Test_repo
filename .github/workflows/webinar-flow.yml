@@ -53,3 +53,46 @@ jobs:
             - Feeling ready? Please go ahead and type `/Email Builder` as a comment below to start :rocket:
             
             We totally get it if you want to use a Google Doc to create your email template. If that is the case just make a comment saying `MOPs Bot I want the Google Doc link` and I will link you to it right away.      
+ 
+  Webinar-page:
+   #  needs: test
+    if: github.event.label.name == 'Webinar-pages'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            Hey there @${{ github.event.issue.user.login }}! Let's get you focused on landing page creation! Please leave issue title, labeling, and assigment to me.
+            
+            - [Here](https://github.com/GitHub-MOPs/Test_repo/issues/165) is a collection of templates that might be helpful for you and speed-up your asset creation process.
+            
+            - Feeling ready? Please go ahead and type `/Webinar landing page` or `/Webinar thank you page` as a comment below to start :rocket:
+            
+            We totally get it if you want to use a Google Doc to create your email template. If that is the case just make a comment saying `MOPs Bot I want the Google Doc link` and I will link you to it right away.
+            
+            # ![Recording 2022-01-20 at 02 59 23](https://user-images.githubusercontent.com/35078348/150297349-2584ede5-686e-409f-bf62-e74204db83a6.gif)
+  
+  
+  Webinar-lead-upload:
+    # needs: test
+    if: github.event.label.name == 'Webinar-lead-upload'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
+            
+            @${{ github.event.issue.user.login }}, please run `/Lead Upload` as a comment to share all that good stuff with us.
+            
+            ![Recording 2022-01-20 at 03 56 19](https://user-images.githubusercontent.com/35078348/150306319-82a4fe09-ab27-42b2-a41b-40705fb1440c.gif)
