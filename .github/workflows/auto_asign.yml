@@ -15,18 +15,18 @@ jobs:
             #
             #Give me a sec to finish the assignment and labeling of this issue and I will get back to you with next steps.
 
-  test:
+  # test:
     # needs: run
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Naturalclar/issue-action@v2.0.2
-        with:
-          title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
-          github-token: "${{ secrets.SECRET_NAME }}"
+    # runs-on: ubuntu-latest
+    # steps:
+      # - uses: Naturalclar/issue-action@v2.0.2
+        # with:
+          # title-or-body: "both"
+          # parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
+          # github-token: "${{ secrets.SECRET_NAME }}"
   
   nurture-comment:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Nurture'
     runs-on: ubuntu-latest
     permissions:
@@ -39,15 +39,24 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, thank you for opening this Master issue for your new Nurture. I see that you've given us most of the required information for a successful Nurture. 
+            👋 @${{ github.event.issue.user.login }}, thank you for opening this Master issue for your new Nurture. I see that you've given us most of the required information for a successful Nurture. 
             
-            Please go ahead and convert the task in the *Task list for sub-issues* above to an issue. We will be working together on assets creation in the Task issue and leave this Master Issue just for the required initial information.
+            While I finish the labeling and assigment please go ahead and convert the task in the *Task list for sub-issues* above ☝️ to an issue. 
             
-            I will reach back to you in the Task issue. See you!
-            
+            I will reach back to you in the Task issue where We will be working together on assets creation. See you!
+  
+  Nurture-label:
+    needs: nurture-comment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "both"
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
+          github-token: "${{ secrets.SECRET_NAME }}"
 
   Webinar-email:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Webinar-emails'
     runs-on: ubuntu-latest
     permissions:
@@ -65,7 +74,7 @@ jobs:
             ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif)
           
   single-email-comment:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Single-Email'
     runs-on: ubuntu-latest
     permissions:
@@ -87,7 +96,7 @@ jobs:
             Thank you! 
   
   Lead-Upload-comment:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Lead Upload'
     runs-on: ubuntu-latest
     permissions:
@@ -109,7 +118,7 @@ jobs:
             Thank you!
             
   Enhancement-Report-comment:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'help-wanted'
     runs-on: ubuntu-latest
     permissions:
@@ -127,7 +136,7 @@ jobs:
             Thank you!       
   
   Webinar:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Webinar'
     runs-on: ubuntu-latest
     permissions:
@@ -154,7 +163,7 @@ jobs:
             ![Recording 2022-01-19 at 16 48 35](https://user-images.githubusercontent.com/35078348/150220570-6a120b92-5080-4fbd-8c93-3ff26dc87cc3.gif)
   
   Webinar-page:
-    needs: test
+   #  needs: test
     if: github.event.label.name == 'Webinar-pages'
     runs-on: ubuntu-latest
     permissions:
@@ -173,7 +182,7 @@ jobs:
   
   
   Webinar-lead-upload:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Webinar-lead-upload'
     runs-on: ubuntu-latest
     permissions:
@@ -191,7 +200,7 @@ jobs:
             ![Recording 2022-01-20 at 03 56 19](https://user-images.githubusercontent.com/35078348/150306319-82a4fe09-ab27-42b2-a41b-40705fb1440c.gif)
    
   Nurture-emails:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'Nurture-emails'
     runs-on: ubuntu-latest
     permissions:
@@ -209,7 +218,7 @@ jobs:
             ![Recording 2022-01-20 at 02 40 21](https://user-images.githubusercontent.com/35078348/150294582-79c9a4db-72f5-4496-ae16-b551200b30b8.gif) 
  
   SEO-page-comment:
-    needs: test
+    # needs: test
     if: github.event.label.name == 'landing-page'
     runs-on: ubuntu-latest
     permissions:
