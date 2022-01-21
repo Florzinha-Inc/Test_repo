@@ -22,7 +22,7 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails - AMER"], "labels": ["AMER", "grey", "Webinar-emails", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Task: Webinar landing pages - AMER"], "labels": ["AMER", "grey", "Webinar-pages", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar lead upload - AMER"], "labels": ["AMER", "grey", "Webinar-lead-upload", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Task: Nurture emails - AMER"], "labels": ["AMER", "grey", "Nurture-emails", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
+          parameters: '[ {"keywords": ["I am based in AMER"], "labels": ["AMER", "grey", "MOPS"], "assignees": ["BrunoChester"]}, {"keywords": ["Webinar emails -"], "labels": ["grey", "Webinar-emails", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Webinar landing pages -"], "labels": ["grey", "Webinar-pages", "MOPS"], "assignees": [""]}, {"keywords": ["Webinar lead upload -"], "labels": ["grey", "Webinar-lead-upload", "MOPS"], "assignees": [""]}, {"keywords": ["Task: Nurture emails -"], "labels": ["grey", "Nurture-emails", "MOPS"], "assignees": [""]}, {"keywords": ["I am based in EMEA", "Webinar emails - EMEA"], "labels": ["EMEA", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["I am based in APAC"], "labels": ["APAC", "grey", "MOPS"], "assignees": ["jason-araujo"]}, {"keywords": ["Description of Enhancement Request"], "labels": ["grey", "MOPS"], "assignees": ["mike421453"]}]'
           github-token: "${{ secrets.SECRET_NAME }}"
   
   nurture-comment:
@@ -39,9 +39,12 @@ jobs:
           body: |
             ![](http://images.github.media/EloquaImages/clients/GitHubInc/%7B64693387-8abe-494c-8af0-7bde046a64d1%7D_hubot_512.png)
             
-            @${{ github.event.issue.user.login }}, thank you for opening this Nurture issue.
+            @${{ github.event.issue.user.login }}, thank you for opening this Master issue for your new Nurture. I see that you've given us most of the required information for a successful Nurture. 
             
-            - [ ] [Task: Nurture Email](https://github.com/GitHub-MOPs/Test_repo/issues/new?labels=Webinar-emails,MOPS,AMER&title=Task+:+Nurture+Email)
+            Please go ahead and convert the task in the *Task list for sub-issues* above to an issue. We will be working together on assets creation in the Task issue and leave this Master Issue just for the required initial information.
+            
+            I will reach back to you in the Task issue. See you!
+            
 
   Webinar-email:
     needs: test
