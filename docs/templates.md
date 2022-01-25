@@ -1,21 +1,4 @@
 ---
-# Resizing images:
-
-* Upload the picture by drag-and-drop in the text field
-* replace `![image](https://your-image-url.type)` with `<img src="https://your-image-url.type" width="100" height="100">`
-
-It's not mandatory to set both `width` and `height`. If only one is set, the other will be adjusted accordingly to preserve the aspect ratio of the image.
-
-# Centralized CTAs:
-
-* We use a blend of HTML and Markdown for this and you can change the value of `align=` to either `right`, `left`, or `center`.
-
-<div align="center" class="code-example" markdown="1">
-
-[Sign up](http://example.com/)
-
-</div>
----
 
 ### Template description: 
 #### Straight forward product communication
