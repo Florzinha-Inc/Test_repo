@@ -59,7 +59,7 @@ body:
   - type: textarea
     id: Exit
     attributes:
-      label: Nurture exit criteria
+      label: Nurture_exit_criteria
       description: Please let us know what the exit criteria are for this nurture
       placeholder: ex. user openned and clicked on an email asset or user submitted a contact us form
     validations:
@@ -97,3 +97,5 @@ body:
         - Provide a link to your copy doc if you have one, otherwise, the MOPs Bot will give you further instructions.
     validations: 
       required: false
+  - type: fill
+  template: "-[] {{ data.Nurture_exit_criteria }}"    
