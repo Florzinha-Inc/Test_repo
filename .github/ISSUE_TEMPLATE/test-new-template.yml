@@ -1,0 +1,14 @@
+name: Single Email Request
+description: Single Email template
+title: "Task: [Single Email] - "
+labels: [Single-Email]
+body: 
+  - type: menu
+    id: project
+    label: Project name
+    options:
+      - Technical Debt
+      - Add Widget
+      - Bug Bash
+  - type: fill
+    template: "You picked the {{ data.project }} project."
